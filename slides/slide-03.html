@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funciones de los Índices Bursátiles</title>
+  <meta name="description" content="Funciones de los índices bursátiles: indicador del mercado, benchmark para gestores y base de productos derivados. El MSCI World y Warren Buffett.">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div id="progress-bar" role="progressbar" aria-label="Progreso de lectura"></div>
+
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a href="../index.html" class="site-header__logo" aria-label="Volver al índice del curso">
+        <img src="../images/logo.jpg" alt="COMT068PO – Mercados Financieros Internacionales" class="site-header__logo-img">
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" class="nav__menu" aria-label="Navegación principal">
+        <a href="../index.html" class="nav__link">Índice</a>
+        <a href="slide-01.html" class="nav__link">Introducción</a>
+        <a href="slide-02.html" class="nav__link">← Anterior</a>
+        <a href="slide-04.html" class="nav__link">Siguiente →</a>
+        <a href="slide-16.html" class="nav__link">Conclusión</a>
+        <a href="slide-17.html" class="nav__link">Cierre</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="slide-hero" aria-labelledby="slide-title">
+      <div class="container slide-hero__inner">
+        <div class="slide-progress-badge" aria-label="Diapositiva 3 de 17">02
+        </div>
+        <p class="slide-hero__eyebrow">Los mercados y las bolsas internacionales.</p>
+        <h1 id="slide-title" class="slide-hero__title">Funciones de los Índices Bursátiles</h1>
+        <ul class="slide-keypoints" aria-label="Puntos clave de la diapositiva">
+          <li class="slide-keypoints__item"><a href="#primera-funcion">Indicador del mercado</a></li>
+          <li class="slide-keypoints__item"><a href="#segunda-funcion">Benchmark para gestores</a> <em><button class="term-link" onclick="openModal('modal-msci-world')" aria-haspopup="dialog">MSCI World</button>: <button class="term-link" onclick="openModal('modal-msci')" aria-haspopup="dialog">Morgan Stanley Capital International</button></em></li>
+          <li class="slide-keypoints__item"><a href="#tercera-funcion">Base de productos derivados</a> <em><button class="term-link" onclick="openModal('modal-derivados')" aria-haspopup="dialog">Futuros, opciones, ETFs</button></em></li>
+        </ul>
+        <div class="progress-bar-wrapper" role="presentation">
+          <div class="progress-bar-fill" style="width: calc(3/17 * 100%)" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container slide-content">
+
+      <section class="content-block content-block--objetivo" aria-labelledby="objetivo-heading">
+        <h2 id="objetivo-heading" class="content-block__title">Objetivo</h2>
+        <p>Comprenderás las tres funciones concretas de los índices —medir, comparar y servir de base para productos financieros— y sepa qué significa "<button class="term-link" onclick="openModal('modal-batir-mercado')" aria-haspopup="dialog">batir al mercado</button>" con un referente real e icónico.</p>
+      </section>
+
+      <section class="content-block content-block--guion" aria-labelledby="guion-heading">
+        <h2 id="guion-heading" class="content-block__title">Explicación</h2>
+        <p>En la diapositiva anterior vimos <em>qué son</em> los índices. Ahora vamos a ver <em>para qué sirven</em>. Y no solo en abstracto: vamos a hablar de cosas que afectan directamente a quienes gestionan dinero.</p>
+        <p>Los índices bursátiles cumplen <strong>tres funciones principales</strong>:</p>
+        <p id="primera-funcion"><button class="term-link" onclick="openModal('modal-indicador-mercado')" aria-haspopup="dialog"><strong>Primera función: son indicadores del mercado.</strong></button> Como vimos antes, nos dicen si la bolsa en conjunto ha subido o bajado. Si el IBEX 35 cierra un día en positivo, no es que todas las empresas españolas hayan ganado dinero —es que la tendencia general ha sido de subida. Es la foto de grupo de la economía en ese momento.</p>
+        <p id="segunda-funcion"><button class="term-link" onclick="openModal('modal-benchmark')" aria-haspopup="dialog"><strong>Segunda función: el benchmark.</strong></button> Un benchmark, en castellano directo, es una <em>vara de medir</em>. ¿Cómo sabe alguien si un gestor de fondos lo está haciendo bien? No por si ha ganado dinero en términos absolutos... sino comparado con su referencia. Si el IBEX 35 sube un 10% en un año y tu fondo solo sube un 6%... has ganado dinero, sí, pero has hecho peor trabajo que el propio mercado. En cambio, si tu fondo sube un 12%, <em>ha batido al mercado</em>. Eso sí es valor añadido.</p>
+        <p id="tercera-funcion"><button class="term-link" onclick="openModal('modal-base-derivados')" aria-haspopup="dialog"><strong>Tercera función: los índices son la base de productos financieros derivados.</strong></button> <button class="term-link" onclick="openModal('modal-derivados')" aria-haspopup="dialog">Futuros, opciones, ETFs</button>... todos ellos toman un índice como referencia. Un inversor institucional puede usar un futuro sobre el IBEX 35 para proteger su cartera si teme una caída del mercado. Esto se llama cobertura, y es uno de los usos más sofisticados —y legítimos— de los derivados.</p>
+        <p>Hay un nombre propio que ilustra perfectamente todo lo que acabamos de explicar: <button class="term-link" onclick="openModal('modal-warren-buffett')" aria-haspopup="dialog"><strong>Warren Buffett</strong></button>. Durante décadas, Buffett gestionó Berkshire Hathaway batiendo consistentemente al S&P 500. Pero el mercado también le ha ganado períodos completos —y eso, precisamente, es lo que hace tan valioso el concepto de benchmark: te dice la verdad.</p>
+      </section>
+
+      <section class="content-block content-block--analogia" aria-labelledby="analogia-heading">
+        <h2 id="analogia-heading" class="content-block__title">Analogía</h2>
+        <p>Imagina que participas en una carrera de 5 kilómetros. El tiempo promedio del grupo es 6 minutos por kilómetro. Eso es <strong>el mercado</strong>. Tu marca personal es tu <strong>rendimiento</strong>. Si corres a 5 minutos por kilómetro, has batido al mercado. Si tardas 7, no lo has conseguido —aunque hayas terminado la carrera.</p>
+        <p>Ahora bien: lo que hace el benchmark es añadir una regla crucial. <em>No basta con llegar a la meta. Importa cuánto tiempo tardas respecto a los demás.</em> Esto es exactamente lo que evalúan los inversores cuando comparan un fondo con su índice de referencia.</p>
+      </section>
+
+      <section class="content-block content-block--contexto" aria-labelledby="contexto-heading">
+        <h2 id="contexto-heading" class="content-block__title">Contexto financiero real</h2>
+        <p>El debate entre <strong>gestión activa</strong> —pagar a un gestor para que intente batir al mercado— y <strong>gestión pasiva</strong> —replicar el índice a bajo coste— es uno de los más importantes de la industria financiera global.</p>
+        <p>Estudios del <button class="term-link" onclick="openModal('modal-spiva')" aria-haspopup="dialog">S&amp;P Dow Jones Indices (<em>SPIVA Scorecard</em>)</button> muestran de forma consistente que <strong>la mayoría de los fondos de gestión activa no baten a su benchmark</strong> en horizontes de 10 o 15 años. Esto ha impulsado un flujo masivo de capital hacia los <button class="term-link" onclick="openModal('modal-fondos-etfs')" aria-haspopup="dialog"><strong>fondos indexados y ETFs</strong></button>, que replican índices como el S&amp;P 500, el Euro Stoxx 50 o el <button class="term-link" onclick="openModal('modal-msci-world')" aria-haspopup="dialog"><strong>MSCI World</strong></button> —el índice que agrupa las mayores empresas de los mercados desarrollados del mundo, creado por <button class="term-link" onclick="openModal('modal-msci')" aria-haspopup="dialog">MSCI Inc. (Morgan Stanley Capital International)</button>— y su equivalente para emergentes, el <strong>MSCI EM</strong> (Emerging Markets).</p>
+        <p>Un solo ETF sobre el MSCI World da acceso a más de 1.500 empresas de 23 países desarrollados. Es la forma más sencilla —y barata— de tener una cartera globalmente diversificada.</p>
+      </section>
+
+      <section class="content-block content-block--complemento" aria-labelledby="complemento-heading">
+        <h2 id="complemento-heading" class="content-block__title">Complemento actualizado</h2>
+        <p><em>(Datos recientes — fuentes: <button class="term-link" onclick="openModal('modal-fuentes-berkshire')" aria-haspopup="dialog">CNBC, Visual Capitalist / Informe Anual Berkshire Hathaway 2025</button>)</em></p>
+        <p>El caso de <button class="term-link" onclick="openModal('modal-warren-buffett')" aria-haspopup="dialog"><strong>Warren Buffett</strong></button> vs. el S&amp;P 500 es el ejemplo histórico más citado sobre benchmarks:</p>
+        <ul>
+          <li>Una inversión de 100 dólares en Berkshire Hathaway en 1965 valdría aproximadamente <strong>6,1 millones de dólares</strong> al cierre de 2025, frente a unos 45.500 dólares en el S&P 500.</li>
+          <li>Berkshire creció a una tasa anual compuesta del <strong>19,7%</strong>, casi el doble del 10,5% del índice.</li>
+          <li>Entre 2015 y 2025, el S&P 500 acumuló un retorno del 304% frente al 234% de Berkshire, en un mercado impulsado por la tecnología y la inteligencia artificial.</li>
+          <li>En 2024, Berkshire Hathaway recuperó terreno: sus <button class="term-link" onclick="openModal('modal-acciones-clase-a')" aria-haspopup="dialog">acciones Clase A</button> subieron un <strong>25,5%</strong>, superando la rentabilidad del S&amp;P 500 (23,3%).</li>
+          <li>En mayo de 2025, Buffett anunció su retirada como CEO. 2025 cerró con Berkshire al +11,3% frente al +16,8% del S&P 500.</li>
+        </ul>
+        <p><strong>La moraleja:</strong> incluso el mejor inversor del siglo XX no bate al mercado todos los años. El benchmark no miente.</p>
+        <p><small>&#9888; Los datos de Buffett y el S&amp;P 500 corresponden a fuentes de <button class="term-link" onclick="openModal('modal-fuentes-berkshire')" aria-haspopup="dialog">CNBC y Visual Capitalist</button> basadas en el informe anual de Berkshire 2025.</small></p>
+      </section>
+
+      <section class="content-block content-block--preguntas" aria-labelledby="preguntas-heading">
+        <h2 id="preguntas-heading" class="content-block__title">Preguntas difíciles y respuestas</h2>
+        <div class="qa-item">
+          <p class="qa-item__question">«Si la mayoría de fondos activos no baten al índice, ¿para qué existe la gestión activa?»</p>
+          <p class="qa-item__answer">Es la pregunta del millón —y es completamente válida. La gestión activa tiene sentido en ciertos contextos: mercados menos eficientes como los emergentes o las pequeñas empresas, o estrategias que buscan no solo rentabilidad sino también control del riesgo. En mercados bajistas, un buen gestor activo puede proteger mejor el capital que un índice que simplemente cae con el mercado. La gestión pasiva es más eficiente en promedio, pero no es perfecta para todos los perfiles ni en todas las condiciones.</p>
+        </div>
+        <div class="qa-item">
+          <p class="qa-item__question">«El MSCI World solo incluye mercados desarrollados. ¿No es eso una visión incompleta del mundo real?»</p>
+          <p class="qa-item__answer">Exacto, y por eso existe el MSCI EM – Emerging Markets – que recoge países como China, India, Brasil o Sudáfrica. Los mercados emergentes representan más del 40% del PIB mundial pero solo un porcentaje menor de los índices globales, lo que genera un debate continuo sobre si la representación financiera refleja o no el peso económico real de cada región.</p>
+        </div>
+      </section>
+
+      <!-- Autoevaluación -->
+      <section class="content-block content-block--quiz" aria-labelledby="quiz-sl03-heading">
+        <h2 id="quiz-sl03-heading" class="content-block__title">Autoevaluación</h2>
+        <div class="quiz" id="quiz-sl03" data-quiz>
+          <p class="quiz__question">¿Cuándo se dice que un gestor de fondos ha «batido al mercado»?</p>
+          <div class="quiz__options" role="group" aria-labelledby="quiz-sl03-heading">
+            <button class="quiz__option" data-correct="false">Cuando su fondo ha comprado acciones de más de 100 empresas diferentes</button>
+            <button class="quiz__option" data-correct="true">Cuando su fondo obtiene una rentabilidad superior al índice de referencia (benchmark) en ese mismo período</button>
+            <button class="quiz__option" data-correct="false">Cuando consigue no perder dinero durante una crisis bursátil</button>
+            <button class="quiz__option" data-correct="false">Cuando su fondo supera los 1.000 millones de euros en activos bajo gestión</button>
+          </div>
+          <button class="quiz__check" onclick="checkQuiz('quiz-sl03')">Comprobar →</button>
+          <div id="quiz-sl03-feedback" class="quiz__feedback" hidden>
+            <div class="quiz__msg-correct" hidden>
+              <strong class="quiz__feedback-label">✓ Exacto.</strong>
+              <p>El benchmark es la vara de medir. Si el IBEX 35 sube un 10% y tu fondo sube un 12%, has batido al mercado. Si tu fondo solo sube un 6%, has ganado dinero pero has hecho peor trabajo que el propio índice. Más del 80% de los fondos de gestión activa no logran batir a su índice de forma consistente a largo plazo.</p>
+            </div>
+            <div class="quiz__msg-incorrect" hidden>
+              <strong class="quiz__feedback-label">✗ Te has equivocado.</strong>
+              <p>La respuesta correcta es: <strong>Cuando su fondo obtiene una rentabilidad superior al índice de referencia (benchmark) en ese mismo período</strong>. La pregunta no es si has ganado dinero en términos absolutos, sino si lo has hecho mejor que el mercado en su conjunto.</p>
+            </div>
+            <button class="quiz__reset" onclick="resetQuiz('quiz-sl03')">Intentar de nuevo</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-block content-block--transicion" aria-labelledby="transicion-heading">
+        <h2 id="transicion-heading" class="content-block__title">Transición</h2>
+        <p>Ya entendemos qué son los índices y para qué sirven. Pero los índices <em>no son todos iguales</em>. Hay distintas formas de construirlos, distintos métodos de ponderación y distintos criterios de selección. Eso es exactamente lo que vamos a explorar ahora.</p>
+      </section>
+
+    </div>
+  </main>
+
+  <nav class="slide-nav" aria-label="Navegación entre diapositivas">
+    <div class="container slide-nav__inner">
+      <a href="slide-02.html" class="slide-nav__btn slide-nav__btn--prev" aria-label="Diapositiva anterior: Índices Bursátiles">← Anterior</a>
+      <a href="../index.html" class="slide-nav__btn slide-nav__btn--index">Índice</a>
+      <a href="slide-04.html" class="slide-nav__btn slide-nav__btn--next" aria-label="Siguiente diapositiva: Warren Buffett">Siguiente →</a>
+    </div>
+  </nav>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__inner">
+      <p class="site-footer__course">COMT068PO – Mercados Financieros Internacionales</p>
+      <p class="site-footer__course">LOS MERCADOS Y LAS BOLSAS INTERNACIONALES</p>
+      <p class="site-footer__copy">&copy; 2026 Dise&ntilde;o y desarrollo WEB Lyudmyla Chub (Tutora del curso). Todos los derechos reservados. &middot; <a href="../politica-cookies.html" class="site-footer__cookie-link">Pol&iacute;tica de cookies</a></p>
+    </div>
+  </footer>
+
+  <button class="btn-top" aria-label="Volver al inicio de la página">↑</button>
+  <!-- Modal: MSCI (empresa) -->
+  <div id="modal-msci" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-msci-title">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-msci')" aria-label="Cerrar">&times;</button>
+      <h2 id="modal-msci-title" class="modal__title">MSCI Inc.</h2>
+      <div class="modal__acronym">
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">M</span>
+          <span class="modal__acronym-word">Morgan Stanley</span>
+        </div>
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">C</span>
+          <span class="modal__acronym-word">Capital</span>
+        </div>
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">I</span>
+          <span class="modal__acronym-word">International</span>
+        </div>
+      </div>
+      <div class="modal__body">
+        <p>MSCI es una empresa americana que se dedica a <strong>crear listas clasificatorias del mundo financiero</strong>, igual que la FIFA hace los rankings del f&uacute;tbol. Esas listas se llaman &iacute;ndices.</p>
+        <p>Sus &iacute;ndices m&aacute;s conocidos son: el <strong>MSCI World</strong> (las grandes empresas del mundo desarrollado), el <strong>MSCI EM</strong> (pa&iacute;ses emergentes como China o India) y los &iacute;ndices <strong>ESG</strong> (empresas con buenas pr&aacute;cticas medioambientales).</p>
+        <p>Cuando un banco o un fondo de pensiones quiere comparar c&oacute;mo le est&aacute; yendo, usa los &iacute;ndices de MSCI como referencia.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: MSCI World (índice) -->
+  <div id="modal-msci-world" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-msci-world-title">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-msci-world')" aria-label="Cerrar">&times;</button>
+      <h2 id="modal-msci-world-title" class="modal__title">MSCI World</h2>
+      <div class="modal__acronym">
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">M</span>
+          <span class="modal__acronym-word">Morgan</span>
+        </div>
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">S</span>
+          <span class="modal__acronym-word">Stanley</span>
+        </div>
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">C</span>
+          <span class="modal__acronym-word">Capital</span>
+        </div>
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">I</span>
+          <span class="modal__acronym-word">International</span>
+        </div>
+      </div>
+      <div class="modal__body">
+        <p>Imagina poder invertir en las <strong>1.500 empresas m&aacute;s grandes del mundo</strong> (de EE.UU., Jap&oacute;n, Europa...) de golpe, con una sola decisi&oacute;n y muy barato. Eso es lo que permite el MSCI World.</p>
+        <p>El 70% de su peso es americano (Apple, Microsoft, Amazon...), pero tambi&eacute;n incluye Jap&oacute;n, Alemania, Francia, el Reino Unido, Canad&aacute;, Suiza y otros pa&iacute;ses ricos. <em>No incluye China ni India</em>, que tienen su propio &iacute;ndice (MSCI EM).</p>
+        <p>Es el <strong>punto de comparaci&oacute;n favorito</strong> de fondos de pensiones de todo el mundo: si tu fondo sube menos que el MSCI World, significa que no est&aacute; haciendo buen trabajo.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Futuros, opciones, ETFs -->
+  <div id="modal-derivados" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-derivados-title">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-derivados')" aria-label="Cerrar">&times;</button>
+      <h2 id="modal-derivados-title" class="modal__title">Futuros, opciones y ETFs</h2>
+      <div class="modal__body">
+        <p><strong>Futuro:</strong> un acuerdo para comprar o vender algo a un precio fijado hoy, pero en una fecha futura. Es como reservar hoy el precio del trigo para dentro de seis meses, aunque no lo necesites hasta entonces. Los fondos grandes los usan para protegerse de ca&iacute;das del mercado.</p>
+        <p><strong>Opci&oacute;n:</strong> el <em>derecho</em> (no la obligaci&oacute;n) de comprar o vender a un precio fijo antes de una fecha l&iacute;mite. Pagas un peque&ntilde;o precio por tener esa opci&oacute;n. Es como un seguro: si el mercado cae y tienes una opci&oacute;n de venta, est&aacute;s protegido. Si no cae, pierdes solo lo que pagaste por el seguro.</p>
+        <p><strong>ETF</strong> (fondo cotizado): una cesta que contiene autom&aacute;ticamente muchas acciones (por ejemplo, las 500 del S&amp;P 500) y que puedes comprar o vender en bolsa como si fuera una sola acci&oacute;n. Comisiones muy bajas y mucha diversificaci&oacute;n de golpe.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Warren Buffett -->
+  <div id="modal-warren-buffett" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-warren-buffett-title">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-warren-buffett')" aria-label="Cerrar">&times;</button>
+      <h2 id="modal-warren-buffett-title" class="modal__title">Warren Buffett</h2>
+      <div class="modal__body">
+        <p>Nacido en Omaha (Nebraska) en 1930, Warren Buffett es el inversor m&aacute;s famoso de la historia. Le llaman <strong>&ldquo;el Or&aacute;culo de Omaha&rdquo;</strong> porque sus predicciones sobre empresas suelen acertar.</p>
+        <p>Su m&eacute;todo es sencillo de explicar, aunque dif&iacute;cil de ejecutar: busca empresas <strong>s&oacute;lidas, que entiende bien y que est&eacute;n a buen precio</strong>, y luego las guarda durante d&eacute;cadas. Nada de comprar y vender r&aacute;pido. Nada de modas.</p>
+        <p>Durante 60 a&ntilde;os dirigi&oacute; Berkshire Hathaway, un grupo empresarial que controla desde una f&aacute;brica de chocolates hasta una empresa de ferrocarriles, pasando por participaciones en Apple y Coca-Cola. Se retir&oacute; como CEO en enero de 2026, a los 95 a&ntilde;os.</p>
+        <p><em>&ldquo;Sé temeroso cuando otros son codiciosos, y codicioso cuando otros son temerosos.&rdquo;</em></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: S&P Dow Jones Indices / SPIVA -->
+  <div id="modal-spiva" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-spiva-title">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-spiva')" aria-label="Cerrar">&times;</button>
+      <h2 id="modal-spiva-title" class="modal__title">S&amp;P Dow Jones Indices &amp; SPIVA</h2>
+      <div class="modal__body">
+        <p><strong>S&amp;P Dow Jones Indices</strong> es la empresa que crea y publica los &iacute;ndices financieros m&aacute;s famosos del mundo, como el S&amp;P 500 y el Dow Jones. Es como la empresa que organiza y publica los rankings deportivos, pero para los mercados.</p>
+        <p>El <strong>SPIVA</strong> es un informe que publican dos veces al a&ntilde;o con una pregunta muy concreta: <em>&iquest;los gestores de fondos que cobran comisiones altas lo hacen mejor que el propio &iacute;ndice?</em></p>
+        <p>La respuesta, repetida a&ntilde;o tras a&ntilde;o, es clara: en horizontes de 15 a&ntilde;os, entre el 88% y el 92% de los fondos de gesti&oacute;n activa obtienen <strong>peores resultados que el &iacute;ndice</strong>, despu&eacute;s de descontar sus comisiones. Es decir: pagar m&aacute;s casi nunca compensa.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Fondos indexados y ETFs -->
+  <div id="modal-fondos-etfs" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-fondos-etfs-title">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-fondos-etfs')" aria-label="Cerrar">&times;</button>
+      <h2 id="modal-fondos-etfs-title" class="modal__title">Fondos indexados y ETFs</h2>
+      <div class="modal__body">
+        <p>Ambos son formas de invertir en <strong>muchas empresas a la vez, con muy poco dinero y comisiones muy bajas</strong>, sin tener que elegir empresa por empresa.</p>
+        <p>Un <strong>fondo indexado</strong> compra autom&aacute;ticamente todas las empresas de un &iacute;ndice (por ejemplo, las 500 del S&amp;P 500) en la misma proporci&oacute;n. No hay ning&uacute;n gestor humano tomando decisiones: el ordenador lo hace solo. Eso lo abarata much&iacute;simo (comisiones del 0,05&ndash;0,20% al a&ntilde;o).</p>
+        <p>Un <strong>ETF</strong> funciona igual, pero se compra y vende en bolsa como si fuera una acci&oacute;n normal, a cualquier hora del d&iacute;a. Para la mayor&iacute;a de personas, la diferencia pr&aacute;ctica entre uno y otro es m&iacute;nima.</p>
+        <p>La gran ventaja de ambos: con 100&euro; ya tienes exposici&oacute;n a cientos de empresas de todo el mundo.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Fuentes — CNBC, Visual Capitalist, Informe Berkshire -->
+  <div id="modal-fuentes-berkshire" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-fuentes-berkshire-title">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-fuentes-berkshire')" aria-label="Cerrar">&times;</button>
+      <h2 id="modal-fuentes-berkshire-title" class="modal__title">Fuentes: CNBC, Visual Capitalist e Informe Berkshire</h2>
+      <div class="modal__body">
+        <p><strong>CNBC</strong> es el canal de televisi&oacute;n financiero m&aacute;s visto del mundo. Emite desde Nueva York las 24 horas con cotizaciones, noticias de mercados y entrevistas a los grandes directivos y economistas. Es el CNN de las finanzas.</p>
+        <p><strong>Visual Capitalist</strong> es una web canadiense que convierte datos financieros complejos en <strong>gr&aacute;ficos e infograf&iacute;as f&aacute;ciles de entender</strong>. Si quieres ver en una imagen c&oacute;mo ha evolucionado la riqueza mundial en los &uacute;ltimos 50 a&ntilde;os, es el sitio.</p>
+        <p>El <strong>Informe Anual de Berkshire Hathaway</strong> es la carta que Buffett escrib&iacute;a cada a&ntilde;o a sus accionistas. Es famoso porque explica, con lenguaje claro y sin jerga, qu&eacute; hizo Berkshire ese a&ntilde;o y c&oacute;mo qued&oacute; respecto al S&amp;P 500. El de 2025, publicado en febrero de 2026, fue el &uacute;ltimo firmado por &eacute;l.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Acciones Clase A de Berkshire -->
+  <div id="modal-acciones-clase-a" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-acciones-clase-a-title">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-acciones-clase-a')" aria-label="Cerrar">&times;</button>
+      <h2 id="modal-acciones-clase-a-title" class="modal__title">Acciones Clase A de Berkshire Hathaway</h2>
+      <div class="modal__body">
+        <p>Berkshire Hathaway tiene dos tipos de acciones, como si hubiera dos tallas del mismo producto.</p>
+        <p>Las <strong>Clase A</strong> son las originales. Buffett se neg&oacute; siempre a &ldquo;partirlas&rdquo; (hacer un <em>split</em>), as&iacute; que llevan desde 1965 sin dividirse y hoy cuestan m&aacute;s de <strong>700.000 d&oacute;lares por acci&oacute;n</strong>: las m&aacute;s caras del mundo. Son para inversores muy grandes que quieren quedarse para siempre.</p>
+        <p>Las <strong>Clase B</strong> se crearon en 1996 para que la gente normal pudiera invertir en Berkshire. Valen aproximadamente 470 d&oacute;lares (unas 1.500 veces menos que las Clase A), pero tienen menos derechos de voto.</p>
+        <p>El precio tan alto de las Clase A fue una decisi&oacute;n deliberada de Buffett: querer&iacute;a <em>espantar</em> a los especuladores de corto plazo y atraer solo a quienes creen en la empresa a largo plazo.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal: Batir al mercado -->
+  <div id="modal-batir-mercado" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-batir-mercado-title">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-batir-mercado')" aria-label="Cerrar ventana">&times;</button>
+      <h2 id="modal-batir-mercado-title" class="modal__title">Batir al Mercado</h2>
+      <div class="modal__body">
+        <p class="modal__section-label">¿Qué significa?</p>
+        <p>Un gestor de fondos <strong>bate al mercado</strong> cuando su cartera obtiene una rentabilidad superior a la del índice de referencia (el <em>benchmark</em>) durante un mismo periodo. Si el IBEX-35 sube un 8% y tu fondo sube un 11%, has batido al mercado.</p>
+        <p class="modal__section-label">¿Por qué es tan difícil?</p>
+        <p>Estudios como el <strong>SPIVA Scorecard</strong> muestran que más del 80% de los fondos de gestión activa no logran batir a su índice de referencia de forma consistente a largo plazo. La razón: comisiones, errores de timing y la dificultad de superar la eficiencia del mercado.</p>
+        <p class="modal__section-label">Analogía</p>
+        <p>Es como intentar correr más que el promedio de todos los corredores de una maratón. Puede ocurrir algún año, pero hacerlo de forma consistente durante décadas es extraordinariamente raro —y Warren Buffett es el ejemplo más célebre de quien lo ha conseguido.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Primera función — Indicador del mercado -->
+  <div id="modal-indicador-mercado" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-indicador-mercado-title">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-indicador-mercado')" aria-label="Cerrar ventana">&times;</button>
+      <h2 id="modal-indicador-mercado-title" class="modal__title">1.ª función: Indicador del mercado</h2>
+      <div class="modal__body">
+        <p class="modal__section-label">¿Qué significa?</p>
+        <p>Un índice bursátil actúa como <strong>foto de grupo de la economía</strong> en cada momento. Nos dice, de un vistazo, si la bolsa en conjunto ha subido o bajado ese día, esa semana, ese año.</p>
+        <p>Cuando el IBEX 35 cierra en positivo no significa que <em>todas</em> las empresas españolas hayan ganado dinero: significa que la <strong>tendencia general ha sido alcista</strong>. Algunas habrán subido mucho, otras poco, algunas habrán bajado —pero el promedio ponderado apunta hacia arriba.</p>
+        <p class="modal__section-label">¿Para quién es útil?</p>
+        <p>Para cualquier persona que quiera entender el estado de un mercado sin tener que analizar empresa por empresa: inversores, periodistas, bancos centrales, gobiernos y ciudadanos que simplemente quieren saber «¿cómo va la bolsa hoy?».</p>
+        <p class="modal__section-label">Analogía</p>
+        <p>Es como la <strong>temperatura media de una ciudad</strong>: no todas las calles están a exactamente esa temperatura, pero el número te da una referencia válida del clima general del día. Si ves 35 °C ya sabes que hace calor, aunque en alguna zona con sombra haga algo menos.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Segunda función — Benchmark para gestores -->
+  <div id="modal-benchmark" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-benchmark-title">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-benchmark')" aria-label="Cerrar ventana">&times;</button>
+      <h2 id="modal-benchmark-title" class="modal__title">2.ª función: el Benchmark</h2>
+      <div class="modal__body">
+        <p class="modal__section-label">¿Qué es un benchmark?</p>
+        <p>En castellano directo: una <strong>vara de medir</strong>. Un punto de referencia contra el que se compara el rendimiento de una cartera o un gestor de fondos.</p>
+        <p>La pregunta no es «¿has ganado dinero?» sino «<strong>¿lo has hecho mejor o peor que el mercado?</strong>». Si el IBEX 35 sube un 10% y tu fondo sube un 6%, has ganado dinero pero has trabajado peor que el propio mercado. Si tu fondo sube un 12%, has <em>batido al benchmark</em>. Eso sí es valor añadido real.</p>
+        <p class="modal__section-label">¿Qué índice se usa como benchmark?</p>
+        <p>Depende del tipo de fondo. Para fondos globales, el más usado es el <strong>MSCI World</strong> (≈ 1.500 empresas de 23 países desarrollados). Para fondos españoles, el IBEX 35. Para fondos americanos, el S&amp;P 500.</p>
+        <p class="modal__section-label">¿Por qué importa tanto?</p>
+        <p>Porque pone en evidencia si el gestor aporta valor real o si el inversor habría ganado lo mismo —o más— con un fondo indexado de bajo coste que simplemente replica el índice sin gestión activa.</p>
+        <p class="modal__section-label">Analogía</p>
+        <p>Es como la nota media de un examen. Si la media de la clase es un 7 y tú sacas un 6, has aprobado —pero has rendido <em>por debajo de la media</em>. El benchmark hace eso mismo con los gestores: les pone frente a la verdad.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Tercera función — Base de productos financieros derivados -->
+  <div id="modal-base-derivados" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-base-derivados-title">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-base-derivados')" aria-label="Cerrar ventana">&times;</button>
+      <h2 id="modal-base-derivados-title" class="modal__title">3.ª función: base de derivados</h2>
+      <div class="modal__body">
+        <p class="modal__section-label">¿Qué significa?</p>
+        <p>Los índices no solo miden o sirven de referencia: también son el <strong>activo subyacente</strong> sobre el que se construyen productos financieros más complejos —los <em>derivados</em>.</p>
+        <p>Un producto derivado es un contrato cuyo valor <strong>depende</strong> (deriva) del valor de otro activo. En este caso, ese activo es el propio índice bursátil.</p>
+        <p class="modal__section-label">Ejemplos</p>
+        <p><strong>Futuros sobre el IBEX 35:</strong> un contrato para comprar o vender el índice a un precio fijado hoy, en una fecha futura. Se usa para protegerse de caídas (cobertura) o para especular sobre la dirección del mercado.</p>
+        <p><strong>ETFs indexados:</strong> fondos cotizados que replican el comportamiento de un índice. Si el S&amp;P 500 sube un 1%, el ETF sube un 1%. Son la forma más sencilla y barata de invertir en un mercado completo.</p>
+        <p><strong>Opciones sobre índices:</strong> el derecho —no la obligación— de comprar o vender el índice a un precio determinado. Muy usadas por inversores institucionales para limitar pérdidas.</p>
+        <p class="modal__section-label">¿Por qué importa?</p>
+        <p>Sin índices bien construidos no existirían estos productos. El índice es la <strong>fundación</strong> sobre la que se levanta toda la arquitectura de la gestión del riesgo financiero moderno.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Cookie consent -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Aviso de cookies">
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__text">
+        <strong>Este sitio utiliza cookies</strong>
+        <p>Usamos almacenamiento local para guardar tus preferencias. Los vídeos de YouTube pueden establecer sus propias cookies. <a href="../politica-cookies.html" class="cookie-banner__link">Más información</a></p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__btn--reject" onclick="cookieConsent('reject')">Solo esenciales</button>
+        <button class="cookie-banner__btn cookie-banner__btn--accept" onclick="cookieConsent('accept')">Aceptar todas</button>
+      </div>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

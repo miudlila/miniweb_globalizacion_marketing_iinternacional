@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Mercado Bursátil Español</title>
+  <meta name="description" content="El mercado bursátil español: cuatro bolsas (Madrid, Barcelona, Bilbao, Valencia), mercado continuo, BME y la historia de la Bolsa de Madrid (1831).">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div id="progress-bar" role="progressbar" aria-label="Progreso de lectura"></div>
+
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a href="../index.html" class="site-header__logo" aria-label="Volver al índice del curso">
+        <img src="../images/logo.jpg" alt="COMT068PO – Mercados Financieros Internacionales" class="site-header__logo-img">
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" class="nav__menu" aria-label="Navegación principal">
+        <a href="../index.html" class="nav__link">Índice</a>
+        <a href="slide-01.html" class="nav__link">Introducción</a>
+        <a href="slide-06.html" class="nav__link">← Anterior</a>
+        <a href="slide-08.html" class="nav__link">Siguiente →</a>
+        <a href="slide-16.html" class="nav__link">Conclusión</a>
+        <a href="slide-17.html" class="nav__link">Cierre</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="slide-hero" aria-labelledby="slide-title">
+      <div class="container slide-hero__inner">
+        <div class="slide-progress-badge" aria-label="Diapositiva 7 de 17">06
+        </div>
+        <p class="slide-hero__eyebrow">Los mercados y las bolsas internacionales.</p>
+        <h1 id="slide-title" class="slide-hero__title">El Mercado Bursátil Español</h1>
+        <ul class="slide-keypoints" aria-label="Puntos clave de la diapositiva">
+          <li class="slide-keypoints__item"><a href="#objetivo-heading">4 Bolsas: Madrid, Barcelona, Bilbao, Valencia</a></li>
+          <li class="slide-keypoints__item"><a href="#guion-heading">Sociedad de Bolsas y mercado continuo</a></li>
+          <li class="slide-keypoints__item"><a href="#contexto-heading">Historia de la Bolsa de Madrid (1831)</a></li>
+        </ul>
+        <div class="progress-bar-wrapper" role="presentation">
+          <div class="progress-bar-fill" style="width: calc(7/17 * 100%)" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container slide-content">
+
+      <section class="content-block content-block--objetivo" aria-labelledby="objetivo-heading">
+        <h2 id="objetivo-heading" class="content-block__title">Objetivo</h2>
+        <p>Comprenderás que detrás del número del IBEX-35 hay una infraestructura real y con historia: <button class="term-link" onclick="openModal('modal-palacio-bolsa')" aria-haspopup="dialog">cuatro bolsas físicas</button>, una evolución de casi dos siglos y una integración progresiva en los mercados financieros europeos e internacionales.</p>
+      </section>
+
+      <section class="content-block content-block--guion" aria-labelledby="guion-heading">
+        <h2 id="guion-heading" class="content-block__title">Explicación</h2>
+        <p>Cuando decimos que el IBEX-35 "sube" o "baja", hay una pregunta que pocas personas se hacen: <em>¿dónde ocurre eso físicamente?</em> ¿Dónde se negocian esas acciones? La respuesta nos lleva a conocer la arquitectura del mercado bursátil español.</p>
+        <p>España tiene, técnicamente, <strong>cuatro bolsas de valores</strong>: Madrid, Barcelona, Bilbao y Valencia. Cada una con su historia, su tradición y su vínculo con la economía de su región. Pero desde 2002, las cuatro operan de forma integrada a través del <strong>mercado continuo</strong>, una plataforma electrónica gestionada por la <strong>Sociedad de Bolsas</strong> que permite que una orden de compra en Bilbao se cruce con una oferta de venta en Valencia en fracciones de segundo.</p>
+        <p>La más antigua e importante es, sin duda, la <strong>Bolsa de Madrid</strong>. Corría el año <strong>1831</strong>. España estaba en una situación financiera muy delicada, bajo el reinado de Fernando VII. Necesitaba un mercado regulado para negociar deuda pública de forma ordenada. Así nació, por Real Decreto, la Bolsa de Madrid. No fue un capricho: fue una <em>necesidad de Estado</em> para financiarse con credibilidad ante los acreedores.</p>
+        <p>Seis décadas después, en <strong>1893</strong>, la Reina Regente María Cristina inauguró el edificio que todos conocemos: el <button class="term-link" onclick="openModal('modal-palacio-bolsa')" aria-haspopup="dialog">Palacio de la Bolsa</button>, en la Plaza de la Lealtad de Madrid. Arquitectura diseñada para transmitir una sola cosa: solidez y confianza.</p>
+        <figure style="margin: 1.5rem 0; text-align: center;">
+          <img src="../images/bolsa_madrid.jpg" alt="Palacio de la Bolsa de Madrid, inaugurado en 1893 por la Reina Regente María Cristina" style="max-width: 100%; height: auto; border-radius: 8px;">
+          <figcaption style="font-size: 0.85em; color: var(--color-muted); margin-top: 0.5rem;">Palacio de la Bolsa de Madrid (1893). Plaza de la Lealtad, Madrid.</figcaption>
+        </figure>
+        <p>El siglo XX fue de transformación: la Bolsa fue incorporando empresas privadas, y en <strong>1988</strong> llegó un hito regulatorio fundamental: la creación de la <button class="term-link" onclick="openModal('modal-cnmv')" aria-haspopup="dialog"><strong>CNMV</strong></button>. Un año después, en 1989, nació el IBEX-35.</p>
+        <p>Y llegamos al siglo XXI con dos movimientos clave: primero, en 2002, la integración de las cuatro bolsas bajo <strong>BME — Bolsas y Mercados Españoles</strong>. Segundo —y muy relevante— en 2020, el grupo suizo <button class="term-link" onclick="openModal('modal-six-group')" aria-haspopup="dialog">SIX Group</button> adquirió BME por más de 2.500 millones de euros. La bolsa española ya no es solo española: es parte de un operador financiero europeo de primer nivel.</p>
+      </section>
+
+      <section class="content-block content-block--analogia" aria-labelledby="analogia-heading">
+        <h2 id="analogia-heading" class="content-block__title">Analogía</h2>
+        <p>Imaginen cuatro aeropuertos regionales —Madrid, Barcelona, Bilbao, Valencia— que un día deciden crear un sistema de control de tráfico aéreo <em>único y compartido</em>. Los aviones siguen despegando y aterrizando en sus ciudades, pero el sistema que coordina todos los vuelos es uno solo, más eficiente y con una visión global del espacio aéreo.</p>
+        <p>Eso es exactamente el <strong>mercado continuo</strong>: las cuatro bolsas mantienen su identidad histórica, pero todas las órdenes de compra y venta fluyen por una única plataforma electrónica que las integra. Y ahora, con la adquisición de SIX Group, ese aeropuerto español también está conectado al sistema de vuelos internacional.</p>
+      </section>
+
+      <section class="content-block content-block--contexto" aria-labelledby="contexto-heading">
+        <h2 id="contexto-heading" class="content-block__title">Contexto financiero real</h2>
+        <p>La historia de la Bolsa de Madrid no es solo historia cultural: está llena de lecciones financieras vigentes.</p>
+        <p>La creación en 1831 para gestionar <strong>deuda pública</strong> nos recuerda que los mercados de capitales nacen de la necesidad de los Estados de financiarse. La prima de riesgo española —la diferencia entre el interés que paga España por su deuda y el que paga Alemania— es en esencia la misma pregunta que se hacían los inversores en 1831: <em>¿cuánto me fío de este país para prestarle dinero?</em></p>
+        <p>La creación de la <button class="term-link" onclick="openModal('modal-cnmv')" aria-haspopup="dialog"><strong>CNMV</strong></button> en 1988 fue la respuesta regulatoria a escándalos y falta de transparencia que habían dañado la confianza en los mercados. Esto ocurrió en toda Europa en esos años —el Big Bang de la City de Londres fue en 1986— y marcó el inicio de la era de los mercados modernos, regulados y supervisados.</p>
+      </section>
+
+      <section class="content-block content-block--complemento" aria-labelledby="complemento-heading">
+        <h2 id="complemento-heading" class="content-block__title">Complemento actualizado</h2>
+        <p><em>(Datos recientes — fuentes: Wikipedia BME / SIX Group, Investing.com / EFE — mayo 2026)</em></p>
+        <p>Desde el 11 de junio de 2020, BME pertenece al grupo suizo SIX Group. La combinación de ambas entidades conforma el <strong>tercer mayor operador de infraestructuras de mercados financieros por ingresos en Europa</strong> y el décimo a nivel mundial.</p>
+        <p>En cuanto a los ingresos, BME facturó <strong>311,9 millones de euros</strong> en 2024 y emplea a más de 1.000 personas.</p>
+        <p>El debate más actual: la transición al ciclo <button class="term-link" onclick="openModal('modal-t1')" aria-haspopup="dialog"><strong>T+1</strong></button> (liquidación al día hábil siguiente). EE.UU. ya lo adoptó en 2024; Europa está en proceso de implementarlo. SIX Group señala que esta reducción del ciclo de liquidación está ejerciendo una gran presión operativa sobre todos los participantes del ecosistema financiero europeo.</p>
+        <p><small>⚠ Los datos históricos sobre la fundación de la Bolsa de Madrid, la CNMV, el IBEX-35 y el mercado continuo pertenecen al material original de la presentación. Los datos sobre BME/SIX Group y T+1 son información actualizada de fuentes externas.</small></p>
+      </section>
+
+      <section class="content-block content-block--preguntas" aria-labelledby="preguntas-heading">
+        <h2 id="preguntas-heading" class="content-block__title">Preguntas difíciles y respuestas</h2>
+        <div class="qa-item">
+          <p class="qa-item__question">«Si BME ya es de un grupo suizo, ¿España ha perdido el control de su propio mercado bursátil?»</p>
+          <p class="qa-item__answer">Es una pregunta con mucha carga simbólica, y es legítima. La respuesta honesta es que BME sigue operando bajo <em>regulación española y europea</em>, supervisada por la <button class="term-link" onclick="openModal('modal-cnmv')" aria-haspopup="dialog">CNMV</button> y la ESMA. La propiedad del operador es privada e internacional, igual que ocurre con muchas infraestructuras financieras en Europa —la Bolsa de Londres también cotiza en bolsa, y Euronext agrupa bolsas de varios países. Lo que cambia es quién cobra los beneficios de la gestión del mercado. El regulador sigue siendo soberano; el gestor, no necesariamente.</p>
+        </div>
+        <div class="qa-item">
+          <p class="qa-item__question">«¿Por qué tiene sentido mantener cuatro bolsas regionales si todo se opera electrónicamente desde una sola plataforma?»</p>
+          <p class="qa-item__answer">Desde el punto de vista puramente operativo, probablemente no sería necesario. Pero las bolsas de Bilbao, Barcelona y Valencia tienen valor institucional, histórico y simbólico para sus regiones. También cumplen funciones de difusión financiera local, formación y acceso para empresas más pequeñas. Además, en un contexto político español sensible a los equilibrios territoriales, mantener esa presencia regional tiene un significado que va más allá de lo puramente financiero.</p>
+        </div>
+      </section>
+
+      <!-- Autoevaluación -->
+      <section class="content-block content-block--quiz" aria-labelledby="quiz-sl07-heading">
+        <h2 id="quiz-sl07-heading" class="content-block__title">Autoevaluación</h2>
+        <div class="quiz" id="quiz-sl07" data-quiz>
+          <p class="quiz__question">¿Cuántas bolsas de valores tiene España y cuál es la principal?</p>
+          <div class="quiz__options" role="group" aria-labelledby="quiz-sl07-heading">
+            <button class="quiz__option" data-correct="false">Solo una bolsa nacional: la Bolsa de Madrid, única en todo el territorio español</button>
+            <button class="quiz__option" data-correct="false">Dos bolsas: Madrid y Barcelona, las únicas con mercado continuo</button>
+            <button class="quiz__option" data-correct="true">Cuatro bolsas: Madrid, Barcelona, Bilbao y Valencia; la principal es la de Madrid</button>
+            <button class="quiz__option" data-correct="false">Ocho bolsas regionales, una por cada comunidad autónoma más poblada</button>
+          </div>
+          <button class="quiz__check" onclick="checkQuiz('quiz-sl07')">Comprobar →</button>
+          <div id="quiz-sl07-feedback" class="quiz__feedback" hidden>
+            <div class="quiz__msg-correct" hidden>
+              <strong class="quiz__feedback-label">✓ Exacto.</strong>
+              <p>España tiene cuatro bolsas físicas: Madrid (fundada en 1831, la más importante), Barcelona, Bilbao y Valencia. Todas están interconectadas a través del Sistema de Interconexión Bursátil Español (SIBE), que permite operar en las cuatro simultáneamente desde cualquier terminal. Es lo que se llama el <em>mercado continuo</em>.</p>
+            </div>
+            <div class="quiz__msg-incorrect" hidden>
+              <strong class="quiz__feedback-label">✗ Te has equivocado.</strong>
+              <p>La respuesta correcta es: <strong>Cuatro bolsas: Madrid, Barcelona, Bilbao y Valencia</strong>. La de Madrid es la más importante y la más antigua (1831). Las cuatro están unificadas tecnológicamente en el mercado continuo español.</p>
+            </div>
+            <button class="quiz__reset" onclick="resetQuiz('quiz-sl07')">Intentar de nuevo</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-block content-block--transicion" aria-labelledby="transicion-heading">
+        <h2 id="transicion-heading" class="content-block__title">Transición</h2>
+        <p>Hemos repasado la historia y la arquitectura del mercado español. Ahora bien: sabemos qué es una bolsa, sabemos qué mide el IBEX-35... pero <strong>¿qué hace que los precios suban o bajen?</strong> Vamos a analizar una operación concreta que ilustra perfectamente la psicología del mercado: los splits y contra-splits.</p>
+      </section>
+
+    </div>
+  </main>
+
+  <nav class="slide-nav" aria-label="Navegación entre diapositivas">
+    <div class="container slide-nav__inner">
+      <a href="slide-06.html" class="slide-nav__btn slide-nav__btn--prev" aria-label="Diapositiva anterior: El IBEX-35">← Anterior</a>
+      <a href="../index.html" class="slide-nav__btn slide-nav__btn--index">Índice</a>
+      <a href="slide-08.html" class="slide-nav__btn slide-nav__btn--next" aria-label="Siguiente diapositiva: Splits y Contra-splits">Siguiente →</a>
+    </div>
+  </nav>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__inner">
+      <p class="site-footer__course">COMT068PO – Mercados Financieros Internacionales</p>
+      <p class="site-footer__course">LOS MERCADOS Y LAS BOLSAS INTERNACIONALES</p>
+      <p class="site-footer__copy">&copy; 2026 Dise&ntilde;o y desarrollo WEB Lyudmyla Chub (Tutora del curso). Todos los derechos reservados. &middot; <a href="../politica-cookies.html" class="site-footer__cookie-link">Pol&iacute;tica de cookies</a></p>
+    </div>
+  </footer>
+
+  <button class="btn-top" aria-label="Volver al inicio de la página">↑</button>
+  <!-- Modal: Palacio de la Bolsa -->
+  <div id="modal-palacio-bolsa" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-palacio-bolsa-titulo">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-palacio-bolsa')" aria-label="Cerrar">&times;</button>
+      <h2 id="modal-palacio-bolsa-titulo" class="modal__title">El Palacio de la Bolsa</h2>
+      <div class="modal__body">
+        <p class="modal__section-label">¿Qué es?</p>
+        <p>Es el edificio histórico donde está la Bolsa de Madrid, en la Plaza de la Lealtad, en el centro de la ciudad. Lo inauguró la Reina Regente <strong>María Cristina</strong> en <strong>1893</strong>.</p>
+
+        <p class="modal__section-label">¿Por qué lo construyeron tan bonito?</p>
+        <p>En aquella época, para que la gente confiara en meter su dinero en la bolsa, había que demostrar que era algo muy serio. Un edificio enorme, con columnas de mármol y una gran cúpula, decía sin palabras: <em>«aquí tu dinero está en buenas manos»</em>. El edificio era, en sí mismo, un mensaje de confianza.</p>
+
+        <p class="modal__section-label">Analogía</p>
+        <p>Imagina que abres una pastelería nueva. Podrías montar un local sencillo, pero decides hacerlo con madera noble, luces cálidas y vitrinas elegantes. Aunque el producto sea el mismo, la gente confía más desde el primer momento. Con el Palacio de la Bolsa pasó exactamente eso, pero a escala de ciudad.</p>
+
+        <p class="modal__section-label">Curiosidad</p>
+        <p>Durante muchos años, dentro de ese edificio los corredores de bolsa compraban y vendían acciones <strong>a gritos</strong>, en la sala principal llamada el «parqué» (por el suelo de madera). Hoy todo eso se hace por ordenador en fracciones de segundo, pero el edificio sigue en pie y sigue siendo la cara visible de la Bolsa de Madrid.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: SIX Group -->
+  <div id="modal-six-group" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-six-group-titulo">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-six-group')" aria-label="Cerrar">&times;</button>
+      <h2 id="modal-six-group-titulo" class="modal__title">SIX Group</h2>
+      <div class="modal__body">
+        <p class="modal__section-label">¿Qué significa SIX?</p>
+        <p><strong>SIX</strong> son las siglas de <strong>Swiss Infrastructure and eXchange</strong>: infraestructura e intercambio suizos. Es el nombre de la empresa que nació en 2008 de la fusión de varias entidades financieras suizas.</p>
+
+        <p class="modal__section-label">¿Qué es?</p>
+        <p>SIX Group es la empresa que gestiona la Bolsa de Zúrich y otros servicios financieros clave en Suiza. En <strong>2020</strong> compró <strong>BME</strong> —la empresa que a su vez gestiona las bolsas españolas de Madrid, Barcelona, Bilbao y Valencia— por <strong>2.843 millones de euros</strong>.</p>
+
+        <p class="modal__section-label">Analogía</p>
+        <p>Imagina que el ayuntamiento de una ciudad tiene una empresa que gestiona todos sus mercados municipales. Un día, una gran empresa suiza compra esa gestora. Los mercados siguen abiertos en el mismo sitio, con los mismos puestos, cumpliendo las normas del ayuntamiento... pero quien cobra por gestionarlos es ahora suizo. Con las bolsas españolas pasó exactamente eso.</p>
+
+        <p class="modal__section-label">¿Qué cambió realmente?</p>
+        <p>Las bolsas españolas siguen funcionando con normalidad, reguladas por la <strong>CNMV</strong> y las normas europeas. Lo único que cambió es quién es el dueño de la empresa que las gestiona. El resultado de la unión de BME y SIX Group es el <strong>tercer mayor operador de mercados financieros de Europa</strong> por ingresos.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: T+1 -->
+  <div id="modal-t1" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-t1-titulo">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-t1')" aria-label="Cerrar">&times;</button>
+      <h2 id="modal-t1-titulo" class="modal__title">T+1: la liquidación al día siguiente</h2>
+      <div class="modal__body">
+        <p class="modal__section-label">¿Qué significa T+1?</p>
+        <p>La <strong>T</strong> viene de <em>Trade date</em> (en inglés, «día de la operación»): es el día en que alguien compra o vende acciones en bolsa. El número que viene detrás indica cuántos días hábiles tarda en completarse el intercambio real de dinero y acciones. <strong>T+1</strong> significa que ese intercambio se completa al día hábil siguiente.</p>
+
+        <p class="modal__section-label">Explicación sencilla</p>
+        <p>Cuando compras acciones en bolsa, la pantalla muestra que la compra está hecha, pero el dinero y las acciones no cambian de mano en ese mismo instante. Hace falta un proceso de comprobación y registro. Ese proceso se llama <strong>liquidación</strong>.</p>
+        <p>Durante décadas el plazo fue de <strong>tres días</strong> (T+3). En 2014 Europa lo redujo a <strong>dos días</strong> (T+2). Ahora el debate es si reducirlo a <strong>un solo día</strong> (T+1).</p>
+
+        <p class="modal__section-label">Analogía</p>
+        <p>Imagina que pagas con cheque en una tienda. El vendedor te da el producto al momento, pero el dinero no llega a su cuenta hasta que el banco procesa el cheque, lo que puede tardar uno o dos días. En bolsa, «procesar el cheque» es la liquidación. Pasar a T+1 es como conseguir que ese proceso tarde solo unas horas en vez de días.</p>
+
+        <p class="modal__section-label">¿Por qué es un debate?</p>
+        <p>Menos días de espera significa menos riesgo: si algo falla entre la compra y la entrega, hay menos tiempo para que el problema se agrave. <strong>EE.UU. ya adoptó T+1 en mayo de 2024.</strong> Europa quiere hacer lo mismo, pero tiene un problema: son más de 20 países con bolsas, bancos y sistemas distintos. Hacer que todos hablen entre sí en menos de 24 horas es un reto técnico enorme. La UE tiene previsto que sea obligatorio en <strong>octubre de 2027</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: CNMV -->
+  <div id="modal-cnmv" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-cnmv-titulo">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-cnmv')" aria-label="Cerrar">&times;</button>
+      <h2 id="modal-cnmv-titulo" class="modal__title">CNMV</h2>
+      <div class="modal__body">
+        <div class="modal__acronym">
+          <div class="modal__acronym-row">
+            <span class="modal__acronym-letter">C</span>
+            <span class="modal__acronym-word">Comisión</span>
+          </div>
+          <div class="modal__acronym-row">
+            <span class="modal__acronym-letter">N</span>
+            <span class="modal__acronym-word">Nacional</span>
+          </div>
+          <div class="modal__acronym-row">
+            <span class="modal__acronym-letter">M</span>
+            <span class="modal__acronym-word">del Mercado</span>
+          </div>
+          <div class="modal__acronym-row">
+            <span class="modal__acronym-letter">V</span>
+            <span class="modal__acronym-word">de Valores</span>
+          </div>
+        </div>
+
+        <p class="modal__section-label">¿Qué es?</p>
+        <p>La CNMV es el organismo del Estado español que vigila y supervisa los mercados de valores: la bolsa, los fondos de inversión, las empresas que gestionan dinero de otras personas y los intermediarios financieros.</p>
+        <p>Su función principal es proteger a los inversores y garantizar que los mercados funcionen con <strong>transparencia y honestidad</strong>. Las empresas que cotizan en bolsa están obligadas a publicar sus resultados económicos y cualquier información relevante. La CNMV vigila que lo hagan y sanciona si no lo hacen.</p>
+
+        <p class="modal__section-label">Analogía</p>
+        <p>Imagina un gran mercado municipal con cientos de puestos de venta. El dueño de cada puesto puede vender lo que quiera, pero hay un inspector del Ayuntamiento que comprueba que los productos estén bien etiquetados, que los precios sean correctos y que nadie engañe al comprador.</p>
+        <p>La CNMV es ese inspector, pero del mercado financiero. No dice qué acciones comprar ni cuáles valen más: solo se asegura de que nadie haga trampas y de que tú, como inversor, tengas acceso a la información real.</p>
+
+        <p class="modal__section-label">¿Por qué se creó en 1988?</p>
+        <p>Antes de 1988, el mercado bursátil español carecía de un regulador independiente. En los años 80, escándalos financieros en varios países europeos dejaron claro que sin supervisión, la confianza de los inversores se derrumba.</p>
+        <p>La Ley del Mercado de Valores de 1988 creó la CNMV para modernizar y sanear el mercado español, en línea con lo que ya estaban haciendo otros países europeos. Un año después, en 1989, nació el IBEX-35: primero la supervisión, luego el índice.</p>
+
+        <p class="modal__section-label">¿Qué hace exactamente?</p>
+        <ul>
+          <li>Autoriza la salida a bolsa de nuevas empresas (las OPV).</li>
+          <li>Supervisa que las empresas cotizadas publiquen su información financiera.</li>
+          <li>Investiga y sanciona el uso de información privilegiada y la manipulación de precios.</li>
+          <li>Registra y supervisa fondos de inversión y gestoras.</li>
+          <li>Informa y protege al inversor particular.</li>
+        </ul>
+
+        <p class="modal__section-label">CNMV y Europa</p>
+        <p>La CNMV no actúa sola: coordina su trabajo con los reguladores del resto de países europeos a través de la <strong>ESMA</strong> (Autoridad Europea de Valores y Mercados), que establece normas comunes para toda la Unión Europea. Así, las reglas del juego son las mismas en Madrid, París, Berlín o Amsterdam.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Cookie consent -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Aviso de cookies">
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__text">
+        <strong>Este sitio utiliza cookies</strong>
+        <p>Usamos almacenamiento local para guardar tus preferencias. Los vídeos de YouTube pueden establecer sus propias cookies. <a href="../politica-cookies.html" class="cookie-banner__link">Más información</a></p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__btn--reject" onclick="cookieConsent('reject')">Solo esenciales</button>
+        <button class="cookie-banner__btn cookie-banner__btn--accept" onclick="cookieConsent('accept')">Aceptar todas</button>
+      </div>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+</html>
+
+
+
+
+

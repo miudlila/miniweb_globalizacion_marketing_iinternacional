@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portada | COMT068PO Mercados Financieros Internacionales</title>
+  <meta name="description" content="Portada de apertura de la sesión del 26-05-2026 del curso COMT068PO – Mercados Financieros Internacionales.">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div id="progress-bar" role="progressbar" aria-label="Progreso de lectura"></div>
+
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a href="../index.html" class="site-header__logo" aria-label="Volver al índice del curso">
+        <img src="../images/logo.jpg" alt="COMT068PO – Mercados Financieros Internacionales" class="site-header__logo-img">
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" class="nav__menu" aria-label="Navegación principal">
+        <a href="../index.html" class="nav__link">Índice</a>
+        <a href="slide-01.html" class="nav__link">Introducción</a>
+        <a href="slide-02.html" class="nav__link">Siguiente →</a>
+        <a href="slide-16.html" class="nav__link">Conclusión</a>
+        <a href="slide-17.html" class="nav__link">Cierre</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="slide-hero slide-hero--portada" aria-label="Portada de la presentación">
+      <div class="container slide-hero__inner">
+        <div class="slide-progress-badge" aria-label="Diapositiva 1 de 17">Introducción
+        </div>
+        <p class="slide-hero__eyebrow">COMT068PO – Mercados Financieros Internacionales</p>
+        <h1 class="slide-hero__title">Los mercados y las bolsas internacionales. Introducción</h1>
+        <div class="course-info-grid">
+          <div class="course-info-card">
+            <span class="course-info-card__label">Duración del curso</span>
+            <span class="course-info-card__value">75 horas</span>
+          </div>
+         
+          <div class="course-info-card">
+            <span class="course-info-card__label">Inicio del curso</span>
+            <span class="course-info-card__value">07-05-2026</span>
+          </div>
+          <div class="course-info-card">
+            <span class="course-info-card__label">Fin del curso</span>
+            <span class="course-info-card__value">30-06-2026</span>
+          </div>
+        </div>
+        <div class="progress-bar-wrapper" role="presentation">
+          <div class="progress-bar-fill" style="width: calc(1/17 * 100%)" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container slide-content">
+
+      <!-- Nota de producción: La diapositiva 1 es la portada de apertura.
+           No contiene bullet points de contenido técnico.
+           Las notas del presentador comienzan en la diapositiva 2. -->
+
+      <section class="content-block content-block--nota" aria-labelledby="nota-apertura">
+        <h2 id="nota-apertura" class="content-block__title">Nota de apertura</h2>
+        <p>Esta portada da inicio a la <strong>mini-web educativa</strong> dedicada al tema <strong>Los Mercados y Las Bolsas Internacionales</strong> del curso <strong>COMT068PO – Mercados Financieros Internacionales</strong>.</p>
+        <p>Esta web abarca los siguientes bloques temáticos:</p>
+        <ul>
+          <li>Índices bursátiles: qué son y para qué sirven</li>
+          <li>El mercado bursátil español: <button class="term-link" onclick="openModal('modal-ibex35')" aria-haspopup="dialog">IBEX-35</button> y bolsas nacionales</li>
+          <li>Mecánica de los mercados: splits, regulación (<button class="term-link" onclick="openModal('modal-cnmv')" aria-haspopup="dialog">CNMV</button>) e identificación (<button class="term-link" onclick="openModal('modal-isin-cfi')" aria-haspopup="dialog">ISIN</button>/<button class="term-link" onclick="openModal('modal-isin-cfi')" aria-haspopup="dialog">CFI</button>)</li>
+          <li>El mapa bursátil europeo y mundial</li>
+          <li>Wall Street y el origen histórico en Ámsterdam</li>
+          <li>Asia y mercados emergentes</li>
+        </ul>
+        <p style="margin-top:0.5rem;font-size:0.85em;color:var(--color-muted)">
+          Haz clic sobre acrónimos subrayados para ver su explicaci&oacute;n.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ── Modal: IBEX-35 ───────────────────────────────────── -->
+  <div id="modal-ibex35" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-ibex35-titulo">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-ibex35')" aria-label="Cerrar">&times;</button>
+      <h2 id="modal-ibex35-titulo" class="modal__title">IBEX-35</h2>
+      <div class="modal__acronym">
+        <div class="modal__acronym-row">
+          
+          <span class="modal__acronym-word">Índice Bursátil Español</span>
+        </div>
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">35</span>
+          <span class="modal__acronym-word">número de empresas que lo componen</span>
+        </div>
+      </div>
+      <div class="modal__body">
+        <p>Piensa en &eacute;l como el <strong>marcador de un partido</strong>: un solo n&uacute;mero que resume si las 35 empresas m&aacute;s grandes de Espa&ntilde;a han ganado o perdido valor ese d&iacute;a.</p>
+        <p>Cuando oyes en las noticias <em>&ldquo;el IBEX ha subido un 1%&rdquo;</em>, significa que, en promedio, empresas como Santander, Inditex (Zara), BBVA, Iberdrola o Telef&oacute;nica valen un 1% m&aacute;s que ayer.</p>
+        <p>Sube cuando hay buenas noticias y confianza. Baja cuando hay miedo o incertidumbre econ&oacute;mica.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Modal: CNMV ───────────────────────────────────────── -->
+  <div id="modal-cnmv" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-cnmv-titulo">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-cnmv')" aria-label="Cerrar">&times;</button>
+      <h2 id="modal-cnmv-titulo" class="modal__title">CNMV</h2>
+      <div class="modal__acronym">
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">C</span>
+          <span class="modal__acronym-word">Comisión</span>
+        </div>
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">N</span>
+          <span class="modal__acronym-word">Nacional del</span>
+        </div>
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">M</span>
+          <span class="modal__acronym-word">Mercado de</span>
+        </div>
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">V</span>
+          <span class="modal__acronym-word">Valores</span>
+        </div>
+      </div>
+      <div class="modal__body">
+        <p>Es el <strong>&aacute;rbitro de la bolsa espa&ntilde;ola</strong>. Su trabajo es vigilar que todo el mundo juegue limpio: que las empresas digan la verdad, que no haya enga&ntilde;os ni manipulaciones.</p>
+        <p>Si una empresa quiere vender sus acciones al p&uacute;blico, primero tiene que ense&ntilde;arle sus cuentas a la CNMV. Si alguien hace trampa con informaci&oacute;n privilegiada (por ejemplo, comprar acciones sabiendo de antemano una noticia secreta), la CNMV puede multarle.</p>
+        <p>Es como la <strong>DGT del mercado financiero</strong>: pone las normas y vigila que se cumplan.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Modal: ISIN / CFI ─────────────────────────────────── -->
+  <div id="modal-isin-cfi" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-isin-cfi-titulo">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-isin-cfi')" aria-label="Cerrar">&times;</button>
+      <h2 id="modal-isin-cfi-titulo" class="modal__title">ISIN y CFI</h2>
+
+      <p class="modal__section-label">ISIN — Identificaci&oacute;n del valor</p>
+      <div class="modal__acronym">
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">I</span>
+          <span class="modal__acronym-word">International</span>
+        </div>
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">S</span>
+          <span class="modal__acronym-word">Securities</span>
+        </div>
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">I</span>
+          <span class="modal__acronym-word">Identification</span>
+        </div>
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">N</span>
+          <span class="modal__acronym-word">Number</span>
+        </div>
+      </div>
+      <div class="modal__body">
+        <p>El ISIN es el <strong>DNI de cada producto financiero</strong>: un c&oacute;digo &uacute;nico de 12 caracteres que identifica una acci&oacute;n, un bono o un fondo en cualquier pa&iacute;s del mundo.</p>
+        <p>Las dos primeras letras indican el pa&iacute;s: <strong>ES</strong>0113900J37 es Banco Santander (Espa&ntilde;a), <strong>US</strong>0378331005 es Apple (Estados Unidos). As&iacute; no hay confusi&oacute;n aunque dos empresas de pa&iacute;ses diferentes tengan nombre parecido.</p>
+      </div>
+
+      <p class="modal__section-label">CFI — &iquest;Qu&eacute; tipo de producto es?</p>
+      <div class="modal__acronym">
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">C</span>
+          <span class="modal__acronym-word">Classification of</span>
+        </div>
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">F</span>
+          <span class="modal__acronym-word">Financial</span>
+        </div>
+        <div class="modal__acronym-row">
+          <span class="modal__acronym-letter">I</span>
+          <span class="modal__acronym-word">Instruments</span>
+        </div>
+      </div>
+      <div class="modal__body">
+        <p>Si el ISIN es el DNI, el CFI es la <strong>&ldquo;profesi&oacute;n&rdquo;</strong> de ese producto: dice qu&eacute; tipo de cosa es.</p>
+        <p>Es un c&oacute;digo de 6 letras. La primera indica la categor&iacute;a: <strong>E</strong> = Acci&oacute;n &bull; <strong>D</strong> = Bono (deuda) &bull; <strong>F</strong> = Fondo de inversi&oacute;n &bull; <strong>O</strong> = Opci&oacute;n.</p>
+        <p>As&iacute; un ordenador sabe instant&aacute;neamente si est&aacute; mirando unas acciones o un bono, sin tener que leer descripciones largas. Es como el c&oacute;digo de barras de los productos del supermercado, pero para el mundo financiero.</p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="slide-nav" aria-label="Navegación entre diapositivas">
+    <div class="container slide-nav__inner">
+      <span class="slide-nav__btn slide-nav__btn--prev" aria-disabled="true">← Anterior</span>
+      <a href="../index.html" class="slide-nav__btn slide-nav__btn--index">Índice</a>
+      <a href="slide-02.html" class="slide-nav__btn slide-nav__btn--next" aria-label="Siguiente diapositiva: Índices Bursátiles">Siguiente →</a>
+    </div>
+  </nav>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__inner">
+      <p class="site-footer__course">COMT068PO – Mercados Financieros Internacionales</p>
+      <p class="site-footer__course">LOS MERCADOS Y LAS BOLSAS INTERNACIONALES</p>
+      <p class="site-footer__copy">&copy; 2026 Dise&ntilde;o y desarrollo WEB Lyudmyla Chub (Tutora del curso). Todos los derechos reservados. &middot; <a href="../politica-cookies.html" class="site-footer__cookie-link">Pol&iacute;tica de cookies</a></p>
+    </div>
+  </footer>
+
+  <button class="btn-top" aria-label="Volver al inicio de la página">↑</button>
+
+
+  <!-- Cookie consent -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Aviso de cookies">
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__text">
+        <strong>Este sitio utiliza cookies</strong>
+        <p>Usamos almacenamiento local para guardar tus preferencias. Los vídeos de YouTube pueden establecer sus propias cookies. <a href="../politica-cookies.html" class="cookie-banner__link">Más información</a></p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__btn--reject" onclick="cookieConsent('reject')">Solo esenciales</button>
+        <button class="cookie-banner__btn cookie-banner__btn--accept" onclick="cookieConsent('accept')">Aceptar todas</button>
+      </div>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+</html>
+
+
