@@ -154,12 +154,19 @@
           <button class="quiz__check" onclick="checkQuiz('quiz-slide05')">Comprobar →</button>
           <div id="quiz-slide05-feedback" class="quiz__feedback" hidden>
             <div class="quiz__msg-correct" hidden>
-              <strong class="quiz__feedback-label">✓ Correcto.</strong>
-              <p>€10 × 1.15 (15% arancel) = €11,50. El arancel se suma al precio base. El importador paga esto cuando el producto entra en aduana.</p>
+              <strong class="quiz__feedback-label">✓ Correcto: €11,50</strong>
+              <p><strong>Cálculo:</strong> €10 (precio base) + (€10 × 15%) = €10 + €1,50 = €11,50</p>
+              <p style="margin-top: 0.5rem;"><strong>Lo que pagará el importador:</strong> El precio del producto (€10) MÁS el arancel (€1,50). Este coste se suma al precio de importación.</p>
             </div>
             <div class="quiz__msg-incorrect" hidden>
-              <strong class="quiz__feedback-label">✗ No es correcto.</strong>
-              <p>La respuesta es: <strong>€11,50</strong>. Cálculo: €10 + (€10 × 15%) = €10 + €1,50 = €11,50.</p>
+              <strong class="quiz__feedback-label">✗ Incorrecto.</strong>
+              <p><strong>La respuesta correcta es:</strong> €11,50</p>
+              <p style="margin-top: 0.5rem;"><strong>¿Por qué están mal las otras opciones?</strong></p>
+              <ul style="margin-top: 0.25rem; padding-left: 1.2rem; color: inherit;">
+                <li><strong>€10:</strong> Sería el precio SIN arancel. El arancel es un impuesto ADICIONAL que se suma.</li>
+                <li><strong>€15:</strong> Confunde el arancel con el porcentaje (15%). No es 15€, sino 15% del precio (€1,50).</li>
+                <li><strong>€10.15:</strong> Calcula como €10 + 0.15 (error de cálculo del 15% como decimal sin multiplicar).</li>
+              </ul>
             </div>
             <button class="quiz__reset" onclick="resetQuiz('quiz-slide05')">Intentar de nuevo</button>
           </div>
