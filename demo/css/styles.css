@@ -32,6 +32,8 @@
   --block-complemento-bg:     #faf0fd;
   --block-preguntas-border:   #8a4a1a;
   --block-preguntas-bg:       #fef5ee;
+  --block-quiz-border:        #0b6b8a;
+  --block-quiz-bg:            #ecf6f9;
   --block-nota-border:        #6b6b1a;
   --block-nota-bg:            #fefef0;
   --block-transicion-border:  #1a6b5c;
@@ -411,6 +413,7 @@ ul, ol { list-style: none; }
 .content-block--contexto    { border-left-color: var(--block-contexto-border);    background: var(--block-contexto-bg);    box-shadow: 0 4px 18px rgba(26,  107, 58,  0.13); }
 .content-block--complemento { border-left-color: var(--block-complemento-border); background: var(--block-complemento-bg); box-shadow: 0 4px 18px rgba(107, 26,  138, 0.11); }
 .content-block--preguntas   { border-left-color: var(--block-preguntas-border);   background: var(--block-preguntas-bg);   box-shadow: 0 4px 18px rgba(138, 74,  26,  0.13); }
+.content-block--quiz        { border-left-color: var(--block-quiz-border);        background: var(--block-quiz-bg);        box-shadow: 0 4px 18px rgba(11,  107, 138, 0.12); }
 .content-block--nota        { border-left-color: var(--block-nota-border);        background: var(--block-nota-bg);        box-shadow: 0 4px 18px rgba(107, 107, 26,  0.11); border-left-style: dashed; }
 .content-block--transicion  { border-left-color: var(--block-transicion-border);  background: var(--block-transicion-bg);  box-shadow: 0 4px 18px rgba(26,  107, 92,  0.13); }
 
@@ -467,6 +470,116 @@ code {
   padding: var(--space-sm) var(--space-md);
   color: var(--color-text-lt);
   font-size: var(--text-base);
+}
+
+/* --- Quiz / Autoevaluación --------------------------------- */
+.quiz {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.quiz__question {
+  font-size: var(--text-md);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.quiz__options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.quiz__option {
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-md);
+  text-align: left;
+  font-size: var(--text-base);
+  color: var(--color-text-lt);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-family: inherit;
+}
+.quiz__option:hover {
+  border-color: var(--color-secondary);
+  background: rgba(11, 107, 138, 0.04);
+}
+.quiz__option:active {
+  transform: scale(0.98);
+}
+.quiz__option[data-checked="true"] {
+  background: rgba(11, 107, 138, 0.12);
+  border-color: var(--color-secondary);
+}
+
+.quiz__check {
+  align-self: flex-start;
+  background: var(--color-secondary);
+  color: var(--color-on-dark);
+  border: none;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.quiz__check:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(11, 107, 138, 0.25);
+}
+
+.quiz__feedback {
+  background: rgba(0,0,0,0.04);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  border-left: 4px solid var(--color-border);
+}
+.quiz__msg-correct {
+  display: none;
+  color: #1a6b3a;
+}
+.quiz__msg-correct[hidden] { display: none !important; }
+.quiz__msg-incorrect {
+  display: none;
+  color: #8a4a1a;
+}
+.quiz__msg-incorrect[hidden] { display: none !important; }
+.quiz__feedback:not([hidden]) .quiz__msg-correct:not([hidden]),
+.quiz__feedback:not([hidden]) .quiz__msg-incorrect:not([hidden]) {
+  display: block;
+}
+
+.quiz__feedback-label {
+  font-weight: 700;
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+.quiz__feedback p {
+  margin: var(--space-xs) 0 0 0;
+  color: inherit;
+  font-size: var(--text-base);
+}
+
+.quiz__reset {
+  margin-top: var(--space-sm);
+  background: var(--color-border);
+  color: var(--color-text);
+  border: none;
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.quiz__reset:hover {
+  background: var(--color-secondary);
+  color: var(--color-on-dark);
 }
 
 .slide-nav {
