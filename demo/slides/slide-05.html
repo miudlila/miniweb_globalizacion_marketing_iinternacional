@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aduanas y Aranceles | Globalización y Marketing Internacional</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div id="progress-bar" role="progressbar" aria-label="Progreso de lectura"></div>
+
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a href="../index.html" class="site-header__logo" aria-label="Volver al índice del curso">
+        <span style="color: #fff; font-weight: 700; font-size: 1rem;">🌍 DEMO</span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" class="nav__menu" aria-label="Navegación principal">
+        <a href="../index.html" class="nav__link">Índice</a>
+        <a href="slide-04.html" class="nav__link">← Anterior</a>
+        <a href="slide-06.html" class="nav__link">Siguiente →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="slide-hero" aria-labelledby="slide-title">
+      <div class="container slide-hero__inner">
+        <div class="slide-progress-badge">05</div>
+        <p class="slide-hero__eyebrow">Control de Fronteras Comerciales</p>
+        <h1 id="slide-title" class="slide-hero__title">Aduanas y Aranceles</h1>
+        <ul class="slide-keypoints" aria-label="Puntos clave">
+          <li class="slide-keypoints__item"><a href="#aduanas-heading">Concepto y funciones</a></li>
+          <li class="slide-keypoints__item"><a href="#aranceles-heading">Aranceles y política comercial</a></li>
+          <li class="slide-keypoints__item"><a href="#practica-heading">Casos reales</a></li>
+        </ul>
+        <div class="progress-bar-wrapper" role="presentation">
+          <div class="progress-bar-fill" style="width: calc(5/17 * 100%)" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container slide-content">
+
+      <section class="content-block content-block--objetivo" aria-labelledby="objetivo-heading">
+        <h2 id="objetivo-heading" class="content-block__title">Objetivo</h2>
+        <p>Entenderás cómo funcionan las <button class="term-link" onclick="openModal('modal-aduana')" aria-haspopup="dialog">aduanas</button>, qué son los <button class="term-link" onclick="openModal('modal-arancel')" aria-haspopup="dialog">aranceles</button>, y cómo afectan el precio final de productos.</p>
+      </section>
+
+      <section class="content-block content-block--guion" aria-labelledby="aduanas-heading">
+        <h2 id="aduanas-heading" class="content-block__title">¿Qué es una Aduana?</h2>
+        <p><strong>Una aduana es el "guardián de las fronteras comerciales".</strong> Es una oficina pública (generalmente en puertos, aeropuertos, carreteras fronterizas) que supervisa TODO lo que entra o sale de un país.</p>
+
+        <div style="margin: 1.5rem 0; padding: 1rem; background: rgba(26,107,58,0.08); border-radius: 0.75rem; border-left: 3px solid #1a6b3a;">
+          <p style="font-weight: 600; margin-bottom: 0.5rem;">Ejemplo Real: Un envío de ropa desde Bangladesh a Barcelona</p>
+          <p style="margin: 0; color: #4a5568; font-size: 0.95rem;">El barco llega al puerto. LA ADUANA verifica: ¿Qué es? ¿De dónde viene? ¿Qué aranceles aplican? ¿Está documentado? ¿Hay inspección necesaria? Solo DESPUÉS la ropa puede entrar en España y venderse en tiendas.</p>
+        </div>
+
+        <p style="margin-top: 1rem;"><strong>Funciones principales de una aduana:</strong></p>
+        <ul>
+          <li>✓ Verifica que los bienes sean los declarados (evitar contrabando).</li>
+          <li>✓ Cobra impuestos (aranceles) sobre bienes importados.</li>
+          <li>✓ Previene el tráfico de drogas, armas, bienes robados.</li>
+          <li>✓ Recauda estadísticas de comercio exterior (datos para gobiernos).</li>
+          <li>✓ Controla el cumplimiento de normas sanitarias, ambientales, de seguridad.</li>
+        </ul>
+      </section>
+
+      <section class="content-block content-block--contexto" aria-labelledby="aranceles-heading">
+        <h2 id="aranceles-heading" class="content-block__title">Aranceles: El Impuesto del Comercio</h2>
+        <p><strong>Un arancel es un IMPUESTO sobre productos importados.</strong></p>
+
+        <div style="margin: 1rem 0; padding: 0.75rem; background: rgba(29,82,136,0.08); border-radius: 0.5rem;">
+          <p style="margin: 0; font-weight: 600; color: #12355b;">Ejemplo simple:</p>
+          <p style="margin: 0.5rem 0 0 0; color: #4a5568;"><code>Camiseta de Bangladesh → Costo: €5 → Arancel 20%: €1 → Precio al importador: €6</code></p>
+        </div>
+
+        <p style="margin-top: 1rem;"><strong>¿Por qué existen aranceles?</strong></p>
+        <ul>
+          <li>💰 <strong>Ingresos:</strong> El estado gana dinero. En España, los aranceles traen millones EUR anuales.</li>
+          <li>🛡️ <strong>Protección:</strong> Protegen industrias locales de competencia extranjera barata. Si no hubiera aranceles, Bangladesh inundaría España con ropa ultra-barata, y las fábricas españolas quebrarían.</li>
+          <li>⚖️ <strong>Justos competencia:</strong> Si Bangladesh paga salarios 10x menores, un arancel "iguala el terreno de juego".</li>
+        </ul>
+
+        <p style="margin-top: 1rem;"><strong>Dos estrategias comerciales opuestas:</strong></p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div style="padding: 0.75rem; background: rgba(156, 107, 46, 0.08); border-radius: 0.5rem;">
+            <p style="font-weight: 600; margin-bottom: 0.5rem; color: #9c6b2e;">🛡️ PROTECCIONISMO</p>
+            <p style="margin: 0; font-size: 0.9rem;">Aranceles ALTOS. Ejemplo: Trump en USA (aranceles de 25% a China).</p>
+            <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; color: #64748b;">Ventaja: Protege empleos locales. Desventaja: Inflación, represalias.</p>
+          </div>
+          <div style="padding: 0.75rem; background: rgba(26,107,58,0.08); border-radius: 0.5rem;">
+            <p style="font-weight: 600; margin-bottom: 0.5rem; color: #1a6b3a;">📈 LIBRECAMBISMO</p>
+            <p style="margin: 0; font-size: 0.9rem;">Aranceles BAJOS o nulos. Ejemplo: UE (libre comercio interno).</p>
+            <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; color: #64748b;">Ventaja: Precios bajos, eficiencia. Desventaja: Destruye empleos locales.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-block content-block--analogia" aria-labelledby="tipos-heading">
+        <h2 id="tipos-heading" class="content-block__title">Tipos de Aduanas</h2>
+        <p><strong>Las aduanas se ubican en diferentes puntos estratégicos:</strong></p>
+
+        <ul style="margin-top: 1rem;">
+          <li>🚢 <strong>Aduanas Marítimas:</strong> Puertos (Barcelona, Valencia, Bilbao). Controlan importaciones/exportaciones por barco.</li>
+          <li>✈️ <strong>Aduanas Aéreas:</strong> Aeropuertos (Barajas, El Prat). Controlan envíos por avión.</li>
+          <li>🚗 <strong>Aduanas Fronterizas:</strong> Carreteras fronterizas (Francia, Portugal). Menos comunes en UE (libre circulación).</li>
+          <li>🏢 <strong>Aduanas Interiores:</strong> Almacenes especiales. Para procesamiento de aduanas sin bloquear tráfico.</li>
+        </ul>
+      </section>
+
+      <section class="content-block content-block--complemento" aria-labelledby="practica-heading">
+        <h2 id="practica-heading" class="content-block__title">Caso Real: El Acero Chino</h2>
+        <p><strong>2018-2019: Trump impone aranceles de 25% al acero chino.</strong></p>
+        <ul>
+          <li>✓ <strong>Resultado 1:</strong> Fábricas de acero en USA ganan competitividad. Empleos se recuperan.</li>
+          <li>✗ <strong>Resultado 2:</strong> Acero sube de precio. Constructoras en USA tienen que pagar más. Precios de casas suben.</li>
+          <li>💥 <strong>Represalia:</strong> China sube aranceles a productos USA. Guerra comercial.</li>
+          <li>📉 <strong>Impacto global:</strong> Bolsas caen. Comercio mundial se ralentiza. COVID empeora la crisis.</li>
+        </ul>
+        <p style="margin-top: 1rem; padding: 1rem; background: rgba(138, 74, 26, 0.08); border-radius: 0.75rem; border-left: 3px solid #8a4a1a;">
+          <strong>Lección:</strong> Los aranceles no son neutrales. Protegen algunos empleos pero destruyen otros. El equilibrio es delicado.
+        </p>
+      </section>
+
+      <section class="content-block content-block--preguntas" aria-labelledby="qa-heading">
+        <h2 id="qa-heading" class="content-block__title">Preguntas Difíciles</h2>
+
+        <div class="qa-item">
+          <p class="qa-item__question">¿Los aranceles son justos?</p>
+          <p class="qa-item__answer">Depende de tu perspectiva. Para un trabajador español de fábrica textil, sí (protege su empleo). Para un consumidor, no (paga más caro). Para un productor español que necesita componentes chinos, no (encarece su producción). No hay respuesta única.</p>
+        </div>
+
+        <div class="qa-item">
+          <p class="qa-item__question">¿Puede existir comercio sin aduanas?</p>
+          <p class="qa-item__answer">Técnicamente sí, pero es raro. La UE interno es casi sin aduanas (para miembros). Pero necesitas algún control: seguridad, impuestos, estadísticas. Las aduanas son inevitables en un mundo de 195 países.</p>
+        </div>
+      </section>
+
+      <section class="content-block content-block--quiz" aria-labelledby="quiz-heading">
+        <h2 id="quiz-heading" class="content-block__title">Autoevaluación</h2>
+        <div class="quiz" id="quiz-slide05" data-quiz>
+          <p class="quiz__question">Si un producto de Bangladesh cuesta €10 en origen y el arancel es 15%, ¿cuánto debe pagar el importador español?</p>
+          <div class="quiz__options" role="group" aria-labelledby="quiz-heading">
+            <button class="quiz__option" data-correct="false">€10</button>
+            <button class="quiz__option" data-correct="true">€11,50</button>
+            <button class="quiz__option" data-correct="false">€15</button>
+            <button class="quiz__option" data-correct="false">€10.15</button>
+          </div>
+          <button class="quiz__check" onclick="checkQuiz('quiz-slide05')">Comprobar →</button>
+          <div id="quiz-slide05-feedback" class="quiz__feedback" hidden>
+            <div class="quiz__msg-correct" hidden>
+              <strong class="quiz__feedback-label">✓ Correcto.</strong>
+              <p>€10 × 1.15 (15% arancel) = €11,50. El arancel se suma al precio base. El importador paga esto cuando el producto entra en aduana.</p>
+            </div>
+            <div class="quiz__msg-incorrect" hidden>
+              <strong class="quiz__feedback-label">✗ No es correcto.</strong>
+              <p>La respuesta es: <strong>€11,50</strong>. Cálculo: €10 + (€10 × 15%) = €10 + €1,50 = €11,50.</p>
+            </div>
+            <button class="quiz__reset" onclick="resetQuiz('quiz-slide05')">Intentar de nuevo</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-block content-block--transicion" aria-labelledby="siguiente-heading">
+        <h2 id="siguiente-heading" class="content-block__title">Siguiente: Regímenes de Comercio</h2>
+        <p><strong>Ahora que sabes QUÉ son los aranceles, descubriremos CÓMO se aplican en diferentes situaciones.</strong></p>
+        <p style="margin-top: 1rem; color: #64748b;">Hay tres regímenes: autorización, vigilancia, certificación. Cada uno es para productos distintos, por razones de seguridad, salud o protección.</p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- MODALES -->
+
+  <div id="modal-aduana" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-aduana-title">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-aduana')" aria-label="Cerrar ventana">×</button>
+      <h2 id="modal-aduana-title" class="modal__title">Aduana</h2>
+      <div class="modal__body">
+        <p class="modal__section-label">¿Qué es?</p>
+        <p>Una <strong>aduana es la institución estatal que controla mercancías en fronteras.</strong> Verifica que cumplan regulaciones, cobra impuestos, previene contrabando.</p>
+        <p style="margin-top: 1rem;"><strong>Ubicación:</strong> Generalmente en puertos, aeropuertos, pasos fronterizos.</p>
+        <p style="margin-top: 1rem;"><strong>Funcionarios:</strong> Agentes aduanales (empleados públicos) que revisan documentos y mercancías.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-arancel" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-arancel-title">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal('modal-arancel')" aria-label="Cerrar ventana">×</button>
+      <h2 id="modal-arancel-title" class="modal__title">Arancel</h2>
+      <div class="modal__body">
+        <p class="modal__section-label">¿Qué es?</p>
+        <p>Un <strong>arancel es un impuesto sobre productos importados.</strong> Se paga en aduanas cuando entra un bien extranjero.</p>
+        <p style="margin-top: 1rem;"><strong>Ejemplos:</strong></p>
+        <ul style="margin: 0.5rem 0; padding-left: 1rem;">
+          <li>Ropa de China: 12% arancel</li>
+          <li>Acero de Rusia: 25% arancel</li>
+          <li>Café de Colombia: 0% arancel (acuerdo especial)</li>
+        </ul>
+        <p style="margin-top: 1rem;"><strong>Propósito:</strong> Proteger industrias locales y generar ingresos fiscales.</p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="slide-nav" aria-label="Navegación entre diapositivas">
+    <div class="container slide-nav__inner">
+      <a href="slide-04.html" class="slide-nav__btn slide-nav__btn--prev" aria-label="Diapositiva anterior">← Anterior</a>
+      <a href="../index.html" class="slide-nav__btn slide-nav__btn--index">Índice</a>
+      <a href="slide-06.html" class="slide-nav__btn slide-nav__btn--next" aria-label="Siguiente diapositiva">Siguiente →</a>
+    </div>
+  </nav>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__inner">
+      <p class="site-footer__course">COMT018PO – Globalización y Marketing Internacional · Teleformación</p>
+      <p class="site-footer__copy">© 2026 Miniweb Educativa</p>
+    </div>
+  </footer>
+
+  <button class="btn-top" aria-label="Volver al inicio de la página">↑</button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

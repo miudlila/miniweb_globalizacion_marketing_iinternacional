@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banco Mundial | Globalización y Marketing Internacional</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div id="progress-bar" role="progressbar" aria-label="Progreso de lectura"></div>
+
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a href="../index.html" class="site-header__logo" aria-label="Volver al índice del curso">
+        <span style="color: #fff; font-weight: 700; font-size: 1rem;">🌍 DEMO</span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" class="nav__menu" aria-label="Navegación principal">
+        <a href="../index.html" class="nav__link">Índice</a>
+        <a href="slide-10.html" class="nav__link">← Anterior</a>
+        <a href="slide-12.html" class="nav__link">Siguiente →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="slide-hero" aria-labelledby="slide-title">
+      <div class="container slide-hero__inner">
+        <div class="slide-progress-badge">11</div>
+        <p class="slide-hero__eyebrow">Desarrollo Económico Global</p>
+        <h1 id="slide-title" class="slide-hero__title">Banco Mundial</h1>
+        <ul class="slide-keypoints" aria-label="Puntos clave">
+          <li class="slide-keypoints__item"><a href="#que-heading">Misión y estructura</a></li>
+          <li class="slide-keypoints__item"><a href="#proyectos-heading">Proyectos y impacto</a></li>
+        </ul>
+        <div class="progress-bar-wrapper" role="presentation">
+          <div class="progress-bar-fill" style="width: calc(11/17 * 100%)" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container slide-content">
+
+      <section class="content-block content-block--objetivo" aria-labelledby="objetivo-heading">
+        <h2 id="objetivo-heading" class="content-block__title">Objetivo</h2>
+        <p>Entenderás cómo el Banco Mundial financia desarrollo en países pobres y por qué es crucial para reducir pobreza global.</p>
+      </section>
+
+      <section class="content-block content-block--guion" aria-labelledby="que-heading">
+        <h2 id="que-heading" class="content-block__title">¿Qué es el Banco Mundial?</h2>
+        <p><strong>No es un banco "normal".</strong> Es una institución multilateral que presta dinero a gobiernos de países en desarrollo para financiar desarrollo.</p>
+
+        <p style="margin-top: 1rem; padding: 1rem; background: rgba(29,82,136,0.08); border-radius: 0.75rem; border-left: 3px solid #1d5288;">
+          <strong>Diferencia FMI vs. Banco Mundial:</strong><br>
+          🔴 <strong>FMI:</strong> Crisis management (corto plazo). "Te presto para que NO caigas".<br>
+          🟢 <strong>Banco Mundial:</strong> Desarrollo (largo plazo). "Te financio una carretera que genera empleo"
+        </p>
+      </section>
+
+      <section class="content-block content-block--contexto" aria-labelledby="proyectos-heading">
+        <h2 id="proyectos-heading" class="content-block__title">¿En Qué Invierte?</h2>
+        <ul>
+          <li>🚧 <strong>Infraestructura:</strong> Carreteras, puentes, ferrocarriles. Ejemplo: Línea de tren Kinshasa-Lagos (Congo).</li>
+          <li>💡 <strong>Energía:</strong> Plantas solares, represas. Llevar electricidad a zonas rurales.</li>
+          <li>🏫 <strong>Educación:</strong> Escuelas, universidades. Formar mano de obra calificada.</li>
+          <li>🏥 <strong>Salud:</strong> Hospitales, vacunación masiva. Combatir enfermedades tropicales.</li>
+          <li>🌾 <strong>Agricultura:</strong> Técnicas modernas, irrigación. Aumentar productividad.</li>
+        </ul>
+
+        <p style="margin-top: 1rem; padding: 1rem; background: rgba(26,107,58,0.08); border-radius: 0.75rem; border-left: 3px solid #1a6b3a;">
+          <strong>Impacto real:</strong> El Banco Mundial es responsable de sacar a ~1 mil millones de personas de la pobreza extrema desde 1990.
+        </p>
+      </section>
+
+      <section class="content-block content-block--complemento" aria-labelledby="critica-heading">
+        <h2 id="critica-heading" class="content-block__title">¿Ayuda o Daño?</h2>
+        <p><strong>También controvertido.</strong> Algunos proyectos generan deuda sin retorno:</p>
+        <ul>
+          <li>✓ Educación y salud siempre generan retorno (más productivos).</li>
+          <li>✗ Grandes proyectos (represas) a veces destruyen ecosistemas y desplazan poblaciones indígenas.</li>
+          <li>✗ Préstamos complejos pueden hipotecar futuro de países por décadas.</li>
+        </ul>
+      </section>
+
+      <section class="content-block content-block--quiz" aria-labelledby="quiz-heading">
+        <h2 id="quiz-heading" class="content-block__title">Autoevaluación</h2>
+        <div class="quiz" id="quiz-slide11" data-quiz>
+          <p class="quiz__question">¿Cuál es el horizonte temporal de inversión del Banco Mundial?</p>
+          <div class="quiz__options" role="group" aria-labelledby="quiz-heading">
+            <button class="quiz__option" data-correct="false">Corto plazo (1-2 años)</button>
+            <button class="quiz__option" data-correct="true">Largo plazo (10-30 años). Infraestructura y desarrollo sostenible</button>
+            <button class="quiz__option" data-correct="false">Muy corto plazo. Solo crisis emergentes</button>
+            <button class="quiz__option" data-correct="false">Indefinido. Depende del país</button>
+          </div>
+          <button class="quiz__check" onclick="checkQuiz('quiz-slide11')">Comprobar →</button>
+          <div id="quiz-slide11-feedback" class="quiz__feedback" hidden>
+            <div class="quiz__msg-correct" hidden>
+              <strong class="quiz__feedback-label">✓ Correcto.</strong>
+              <p>El Banco Mundial invierte en desarrollo sostenible: proyectos que generan beneficio AÑOS o DÉCADAS después. Es "plantar árboles cuya sombra otros disfrutarán".</p>
+            </div>
+            <div class="quiz__msg-incorrect" hidden>
+              <strong class="quiz__feedback-label">✗ No es correcto.</strong>
+              <p>La respuesta es: <strong>Largo plazo (10-30 años). Infraestructura y desarrollo sostenible</strong>. Eso es precisamente la característica del Banco Mundial.</p>
+            </div>
+            <button class="quiz__reset" onclick="resetQuiz('quiz-slide11')">Intentar de nuevo</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-block content-block--transicion" aria-labelledby="siguiente-heading">
+        <h2 id="siguiente-heading" class="content-block__title">Siguiente: Marketing Internacional</h2>
+        <p><strong>Ya entiendes CÓMO funciona el comercio global. Ahora aprenderás CÓMO VENDER internacionalmente.</strong></p>
+        <p style="margin-top: 1rem; color: #64748b;">Pasamos de "teoría de comercio" a "práctica empresarial". Plan de marketing, análisis DAFO, estrategia digital.</p>
+      </section>
+
+    </div>
+  </main>
+
+  <nav class="slide-nav" aria-label="Navegación entre diapositivas">
+    <div class="container slide-nav__inner">
+      <a href="slide-10.html" class="slide-nav__btn slide-nav__btn--prev" aria-label="Diapositiva anterior">← Anterior</a>
+      <a href="../index.html" class="slide-nav__btn slide-nav__btn--index">Índice</a>
+      <a href="slide-12.html" class="slide-nav__btn slide-nav__btn--next" aria-label="Siguiente diapositiva">Siguiente →</a>
+    </div>
+  </nav>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__inner">
+      <p class="site-footer__course">COMT018PO – Globalización y Marketing Internacional · Teleformación</p>
+      <p class="site-footer__copy">© 2026 Miniweb Educativa</p>
+    </div>
+  </footer>
+
+  <button class="btn-top" aria-label="Volver al inicio de la página">↑</button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

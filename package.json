@@ -1,0 +1,12 @@
+{
+  "name": "miniweb-educativa",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Mini-web educativa sobre economía global y mercados",
+  "scripts": {
+    "extract-pdf": "node extract-pdf.js"
+  },
+  "dependencies": {
+    "pdf-parse": "^1.1.1"
+  }
+}
