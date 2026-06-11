@@ -82,4 +82,64 @@
       link.setAttribute('aria-current', 'page');
     }
   });
+
+  window.checkQuiz = function (quizId) {
+    const quiz = document.getElementById(quizId);
+    if (!quiz) return;
+
+    const selected = quiz.querySelector('.quiz__option[data-checked="true"]');
+    if (!selected) {
+      alert('Por favor selecciona una respuesta');
+      return;
+    }
+
+    const isCorrect = selected.getAttribute('data-correct') === 'true';
+    const feedback = document.getElementById(quizId + '-feedback');
+
+    if (feedback) {
+      feedback.removeAttribute('hidden');
+      const correctMsg = feedback.querySelector('.quiz__msg-correct');
+      const incorrectMsg = feedback.querySelector('.quiz__msg-incorrect');
+
+      if (isCorrect) {
+        if (correctMsg) correctMsg.removeAttribute('hidden');
+        if (incorrectMsg) incorrectMsg.setAttribute('hidden', '');
+      } else {
+        if (correctMsg) correctMsg.setAttribute('hidden', '');
+        if (incorrectMsg) incorrectMsg.removeAttribute('hidden');
+      }
+    }
+
+    quiz.querySelector('.quiz__check').setAttribute('disabled', '');
+    quiz.querySelectorAll('.quiz__option').forEach(function (opt) {
+      opt.setAttribute('disabled', '');
+    });
+  };
+
+  window.resetQuiz = function (quizId) {
+    const quiz = document.getElementById(quizId);
+    if (!quiz) return;
+
+    const feedback = document.getElementById(quizId + '-feedback');
+    if (feedback) feedback.setAttribute('hidden', '');
+
+    quiz.querySelectorAll('.quiz__option').forEach(function (opt) {
+      opt.removeAttribute('data-checked');
+      opt.removeAttribute('disabled');
+    });
+
+    quiz.querySelector('.quiz__check').removeAttribute('disabled');
+  };
+
+  document.querySelectorAll('.quiz__option').forEach(function (option) {
+    option.addEventListener('click', function () {
+      const quiz = option.closest('.quiz');
+      if (!quiz) return;
+
+      quiz.querySelectorAll('.quiz__option').forEach(function (opt) {
+        opt.removeAttribute('data-checked');
+      });
+      option.setAttribute('data-checked', 'true');
+    });
+  });
 })();
