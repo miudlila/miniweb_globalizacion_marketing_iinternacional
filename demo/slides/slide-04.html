@@ -51,32 +51,47 @@
       </section>
 
       <section class="content-block content-block--guion" aria-labelledby="mayorista-heading">
-        <h2 id="mayorista-heading" class="content-block__title">La Cadena: Mayorista → Minorista → Cliente</h2>
+        <h2 id="mayorista-heading" class="content-block__title">La Cadena de Distribución</h2>
 
-        <div style="margin: 1rem 0; padding: 1rem; background: rgba(29,82,136,0.08); border-radius: 0.75rem; border-left: 3px solid #1d5288;">
-          <p style="font-weight: 600; margin-bottom: 0.5rem;">🏭 PRODUCTOR</p>
-          <p style="margin: 0; color: #4a5568; font-size: 0.95rem;">Fábrica que fabrica camisetas (Ejemplo: INDITEX en Barcelona).</p>
-        </div>
+        <div style="display: flex; flex-direction: column; gap: 0; position: relative;">
+          <!-- Productor -->
+          <div style="margin: 0; padding: 1rem; background: rgba(29,82,136,0.08); border-radius: 0.75rem 0.75rem 0 0; border-left: 3px solid #1d5288;">
+            <p style="font-weight: 600; margin-bottom: 0.5rem;">🏭 PRODUCTOR</p>
+            <p style="margin: 0; color: #4a5568; font-size: 0.95rem;">Fábrica que fabrica camisetas (Ejemplo: INDITEX en Barcelona).</p>
+          </div>
 
-        <div style="text-align: center; margin: 0.75rem 0;">➡️</div>
+          <!-- Flecha -->
+          <div style="text-align: center; background: linear-gradient(to right, transparent, #1d5288, transparent); height: 2px; position: relative; margin: 0;">
+            <div style="position: absolute; right: -8px; top: -5px; width: 0; height: 0; border-left: 8px solid transparent; border-right: 0 solid transparent; border-top: 6px solid #1d5288; border-bottom: 6px solid #1d5288;"></div>
+          </div>
 
-        <div style="margin: 1rem 0; padding: 1rem; background: rgba(29,82,136,0.08); border-radius: 0.75rem; border-left: 3px solid #1d5288;">
-          <p style="font-weight: 600; margin-bottom: 0.5rem;">📦 MAYORISTA</p>
-          <p style="margin: 0; color: #4a5568; font-size: 0.95rem;">Compra 10.000 camisetas a la fábrica. Las almacena. Las vende a tiendas. Gana margen. (Ejemplo: Distribuidora Central).</p>
-        </div>
+          <!-- Mayorista -->
+          <div style="margin: 0; padding: 1rem; background: rgba(29,82,136,0.08); border-left: 3px solid #1d5288;">
+            <p style="font-weight: 600; margin-bottom: 0.5rem;">📦 MAYORISTA</p>
+            <p style="margin: 0; color: #4a5568; font-size: 0.95rem;">Compra 10.000 camisetas a la fábrica. Las almacena. Las vende a tiendas. Gana margen. (Ejemplo: Distribuidora Central).</p>
+          </div>
 
-        <div style="text-align: center; margin: 0.75rem 0;">➡️</div>
+          <!-- Flecha -->
+          <div style="text-align: center; background: linear-gradient(to right, transparent, #1d5288, transparent); height: 2px; position: relative; margin: 0;">
+            <div style="position: absolute; right: -8px; top: -5px; width: 0; height: 0; border-left: 8px solid transparent; border-right: 0 solid transparent; border-top: 6px solid #1d5288; border-bottom: 6px solid #1d5288;"></div>
+          </div>
 
-        <div style="margin: 1rem 0; padding: 1rem; background: rgba(29,82,136,0.08); border-radius: 0.75rem; border-left: 3px solid #1d5288;">
-          <p style="font-weight: 600; margin-bottom: 0.5rem;">🏪 MINORISTA</p>
-          <p style="margin: 0; color: #4a5568; font-size: 0.95rem;">Tienda que compra 100 camisetas al mayorista. Las vende al público. Gana margen. (Ejemplo: Zara, H&M).</p>
-        </div>
+          <!-- Minorista -->
+          <div style="margin: 0; padding: 1rem; background: rgba(29,82,136,0.08); border-left: 3px solid #1d5288;">
+            <p style="font-weight: 600; margin-bottom: 0.5rem;">🏪 MINORISTA</p>
+            <p style="margin: 0; color: #4a5568; font-size: 0.95rem;">Tienda que compra 100 camisetas al mayorista. Las vende al público. Gana margen. (Ejemplo: Zara, H&M).</p>
+          </div>
 
-        <div style="text-align: center; margin: 0.75rem 0;">➡️</div>
+          <!-- Flecha -->
+          <div style="text-align: center; background: linear-gradient(to right, transparent, #1d5288, transparent); height: 2px; position: relative; margin: 0;">
+            <div style="position: absolute; right: -8px; top: -5px; width: 0; height: 0; border-left: 8px solid transparent; border-right: 0 solid transparent; border-top: 6px solid #1d5288; border-bottom: 6px solid #1d5288;"></div>
+          </div>
 
-        <div style="margin: 1rem 0; padding: 1rem; background: rgba(29,82,136,0.08); border-radius: 0.75rem; border-left: 3px solid #1d5288;">
-          <p style="font-weight: 600; margin-bottom: 0.5rem;">👤 CLIENTE</p>
-          <p style="margin: 0; color: #4a5568; font-size: 0.95rem;">Compra 1 camiseta al minorista. Precio final: €20.</p>
+          <!-- Cliente -->
+          <div style="margin: 0; padding: 1rem; background: rgba(29,82,136,0.08); border-radius: 0 0 0.75rem 0.75rem; border-left: 3px solid #1d5288;">
+            <p style="font-weight: 600; margin-bottom: 0.5rem;">👤 CLIENTE</p>
+            <p style="margin: 0; color: #4a5568; font-size: 0.95rem;">Compra 1 camiseta al minorista. Precio final: €20.</p>
+          </div>
         </div>
 
         <p style="margin-top: 1.5rem; padding: 1rem; background: rgba(26,107,58,0.08); border-radius: 0.75rem; border-left: 3px solid #1a6b3a;">
