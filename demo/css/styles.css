@@ -726,6 +726,38 @@ code {
   color: var(--color-primary);
 }
 
+/* --- Iconos CSS ----------------------------------------- */
+.icon-label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.icon-label::before {
+  content: '';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  color: white;
+  font-weight: 700;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+.icon-label.icon-factory::before { content: '⚙'; background: #1d5288; border-radius: 4px; }
+.icon-label.icon-warehouse::before { content: '□'; background: #c9a227; font-size: 1.2rem; }
+.icon-label.icon-store::before { content: '⊞'; background: #1a6b3a; font-size: 1rem; }
+.icon-label.icon-user::before { content: '◯'; background: #8a4a1a; }
+.icon-label.icon-chart::before { content: '▲'; background: #0b6b8a; }
+.icon-label.icon-shield::before { content: '✓'; background: #1a6b3a; }
+.icon-label.icon-alert::before { content: '!'; background: #8a4a1a; font-size: 1rem; }
+.icon-label.icon-info::before { content: 'ℹ'; background: #0b6b8a; }
+.icon-label.icon-link::before { content: '→'; background: #1d5288; }
+
 .slide-nav {
   padding: var(--space-lg) 0 var(--space-xl);
 }
