@@ -866,7 +866,8 @@ code {
 
 .index-article {
   animation: cardFadeIn 0.4s ease both;
-  transition: box-shadow var(--transition-normal);
+  transition: box-shadow var(--transition-normal) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.09) !important;
 }
 .index-article:hover {
   box-shadow: 0 12px 28px rgba(0,0,0,0.18) !important;
