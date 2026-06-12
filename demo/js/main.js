@@ -143,37 +143,39 @@
     });
   });
 
-  window.openModal = function (modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-      modal.classList.add('is-open');
-      document.body.style.overflow = 'hidden';
-    }
-  };
+  /* ── Sistema de modales ─────────────────────────────────── */
+  function openModal(id) {
+    var backdrop = document.getElementById(id);
+    if (!backdrop) return;
+    backdrop.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    var closeBtn = backdrop.querySelector('.modal__close');
+    if (closeBtn) closeBtn.focus();
+  }
 
-  window.closeModal = function (modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-      modal.classList.remove('is-open');
-      document.body.style.overflow = '';
-    }
-  };
-
-  document.querySelectorAll('.modal-backdrop').forEach(function (backdrop) {
-    backdrop.addEventListener('click', function (e) {
-      if (e.target === backdrop) {
-        const modalId = backdrop.id;
-        closeModal(modalId);
-      }
-    });
-  });
+  function closeModal(id) {
+    var backdrop = document.getElementById(id);
+    if (!backdrop) return;
+    backdrop.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
 
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
-      const openModals = document.querySelectorAll('.modal-backdrop.is-open');
-      openModals.forEach(function (modal) {
-        closeModal(modal.id);
+      document.querySelectorAll('.modal-backdrop.is-open').forEach(function (m) {
+        m.classList.remove('is-open');
       });
+      document.body.style.overflow = '';
     }
   });
+
+  document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('modal-backdrop')) {
+      e.target.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+  });
+
+  window.openModal  = openModal;
+  window.closeModal = closeModal;
 })();
