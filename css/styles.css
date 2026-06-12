@@ -859,6 +859,19 @@ code {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+@keyframes cardFadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.index-article {
+  animation: cardFadeIn 0.4s ease both;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+.index-article:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12) !important;
+}
 
 @media (max-width: 768px) {
   .slide-hero         { padding: var(--space-lg) 0 var(--space-md); }
