@@ -111,12 +111,19 @@
           <button class="quiz__check" onclick="checkQuiz('quiz-slide08')">Comprobar →</button>
           <div id="quiz-slide08-feedback" class="quiz__feedback" hidden>
             <div class="quiz__msg-correct" hidden>
-              <strong class="quiz__feedback-label">✓ Correcto.</strong>
-              <p>El B/L es el recibo del transporte. Prueba que recibió la mercancía en buen estado. Es crucial para seguimiento.</p>
+              <strong class="quiz__feedback-label">✓ Correcto: Conocimiento de Embarque (B/L)</strong>
+              <p><strong>¿Por qué?</strong> El B/L es el "recibo de transporte". El transportista firma diciendo: "Recibí esta mercancía, la transportaré, y la entregaré". Es PRUEBA LEGAL de que la mercancía salió.</p>
+              <p style="margin-top: 0.5rem;"><strong>Uso:</strong> Necesario para cobrar la factura. Sin B/L, no pruebas que el barco la tiene. El importador no paga.</p>
             </div>
             <div class="quiz__msg-incorrect" hidden>
-              <strong class="quiz__feedback-label">✗ No es correcto.</strong>
-              <p>La respuesta es: <strong>Conocimiento de embarque (B/L)</strong>. Este documento es la prueba del transporte.</p>
+              <strong class="quiz__feedback-label">✗ Incorrecto.</strong>
+              <p><strong>La respuesta correcta es:</strong> Conocimiento de embarque (B/L)</p>
+              <p style="margin-top: 0.5rem;"><strong>¿Por qué están mal las otras?</strong></p>
+              <ul style="margin-top: 0.25rem; padding-left: 1.2rem; color: inherit;">
+                <li><strong>Factura comercial:</strong> Documento COMERCIAL (precio, cantidad). NO prueba transporte ni recepción física.</li>
+                <li><strong>DUA (Declaración Aduanal):</strong> Para ADUANAS (impuestos, regulación). No es prueba de transporte.</li>
+                <li><strong>Certificado de origen:</strong> Prueba DÓNDE se fabricó. No prueba que fue recibido por transportista.</li>
+              </ul>
             </div>
             <button class="quiz__reset" onclick="resetQuiz('quiz-slide08')">Intentar de nuevo</button>
           </div>
