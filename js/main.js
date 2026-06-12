@@ -1,12 +1,11 @@
 /* ============================================================
-   main.js — Mercados Financieros Internacionales (COMT068PO)
+   main.js — Globalización y Marketing Internacional (DEMO)
    Handles: mobile nav toggle, back-to-top, reading progress
    ============================================================ */
 
 (function () {
   'use strict';
 
-  /* ── Mobile navigation toggle ────────────────────────────── */
   const toggle = document.querySelector('.nav__toggle');
   const menu   = document.querySelector('.nav__menu');
 
@@ -16,7 +15,6 @@
       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 
-    /* Close menu when a link is clicked */
     menu.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         menu.classList.remove('is-open');
@@ -24,7 +22,6 @@
       });
     });
 
-    /* Close menu on outside click */
     document.addEventListener('click', function (e) {
       if (!toggle.contains(e.target) && !menu.contains(e.target)) {
         menu.classList.remove('is-open');
@@ -33,7 +30,6 @@
     });
   }
 
-  /* ── Back-to-top button ──────────────────────────────────── */
   const btnTop = document.querySelector('.btn-top');
 
   if (btnTop) {
@@ -50,7 +46,6 @@
     });
   }
 
-  /* ── Reading progress bar ────────────────────────────────── */
   const progressBar = document.getElementById('progress-bar');
 
   if (progressBar) {
@@ -75,6 +70,78 @@
     window.addEventListener('scroll', updateProgress, { passive: true });
     updateProgress();
   }
+
+  const currentPath = window.location.pathname.split('/').pop();
+
+  document.querySelectorAll('.nav__link').forEach(function (link) {
+    const href = link.getAttribute('href');
+    if (!href) return;
+    const linkFile = href.split('/').pop();
+    if (linkFile === currentPath || (currentPath === '' && linkFile === 'index.html')) {
+      link.classList.add('is-active');
+      link.setAttribute('aria-current', 'page');
+    }
+  });
+
+  window.checkQuiz = function (quizId) {
+    const quiz = document.getElementById(quizId);
+    if (!quiz) return;
+
+    const selected = quiz.querySelector('.quiz__option[data-checked="true"]');
+    if (!selected) {
+      alert('Por favor selecciona una respuesta');
+      return;
+    }
+
+    const isCorrect = selected.getAttribute('data-correct') === 'true';
+    const feedback = document.getElementById(quizId + '-feedback');
+
+    if (feedback) {
+      feedback.removeAttribute('hidden');
+      const correctMsg = feedback.querySelector('.quiz__msg-correct');
+      const incorrectMsg = feedback.querySelector('.quiz__msg-incorrect');
+
+      if (isCorrect) {
+        if (correctMsg) correctMsg.removeAttribute('hidden');
+        if (incorrectMsg) incorrectMsg.setAttribute('hidden', '');
+      } else {
+        if (correctMsg) correctMsg.setAttribute('hidden', '');
+        if (incorrectMsg) incorrectMsg.removeAttribute('hidden');
+      }
+    }
+
+    quiz.querySelector('.quiz__check').setAttribute('disabled', '');
+    quiz.querySelectorAll('.quiz__option').forEach(function (opt) {
+      opt.setAttribute('disabled', '');
+    });
+  };
+
+  window.resetQuiz = function (quizId) {
+    const quiz = document.getElementById(quizId);
+    if (!quiz) return;
+
+    const feedback = document.getElementById(quizId + '-feedback');
+    if (feedback) feedback.setAttribute('hidden', '');
+
+    quiz.querySelectorAll('.quiz__option').forEach(function (opt) {
+      opt.removeAttribute('data-checked');
+      opt.removeAttribute('disabled');
+    });
+
+    quiz.querySelector('.quiz__check').removeAttribute('disabled');
+  };
+
+  document.querySelectorAll('.quiz__option').forEach(function (option) {
+    option.addEventListener('click', function () {
+      const quiz = option.closest('.quiz');
+      if (!quiz) return;
+
+      quiz.querySelectorAll('.quiz__option').forEach(function (opt) {
+        opt.removeAttribute('data-checked');
+      });
+      option.setAttribute('data-checked', 'true');
+    });
+  });
 
   /* ── Sistema de modales ─────────────────────────────────── */
   function openModal(id) {
@@ -111,87 +178,4 @@
 
   window.openModal  = openModal;
   window.closeModal = closeModal;
-
-  /* ── Cookie consent ──────────────────────────────────────── */
-  var cookieBanner = document.getElementById('cookie-banner');
-
-  if (cookieBanner && !localStorage.getItem('cookie-consent')) {
-    setTimeout(function () {
-      cookieBanner.classList.add('is-visible');
-    }, 600);
-  }
-
-  function cookieConsent(choice) {
-    localStorage.setItem('cookie-consent', choice);
-    if (cookieBanner) {
-      cookieBanner.classList.remove('is-visible');
-    }
-  }
-
-  window.cookieConsent = cookieConsent;
-
-  /* ── Quiz de autoevaluación ─────────────────────────────── */
-
-  /* Selección de opción */
-  document.addEventListener('click', function (e) {
-    var opt = e.target.closest('.quiz__option');
-    if (!opt || opt.disabled) return;
-    var quiz = opt.closest('[data-quiz]');
-    if (!quiz) return;
-    quiz.querySelectorAll('.quiz__option').forEach(function (o) { o.classList.remove('is-selected'); });
-    opt.classList.add('is-selected');
-  });
-
-  function checkQuiz(quizId) {
-    var quiz     = document.getElementById(quizId);
-    if (!quiz) return;
-    var selected = quiz.querySelector('.quiz__option.is-selected');
-    var feedback = document.getElementById(quizId + '-feedback');
-    if (!selected) return;
-
-    var isCorrect = selected.dataset.correct === 'true';
-
-    /* Mostrar el mensaje correcto, ocultar el otro */
-    feedback.querySelector('.quiz__msg-correct').hidden   = !isCorrect;
-    feedback.querySelector('.quiz__msg-incorrect').hidden = isCorrect;
-    feedback.hidden = false;
-
-    /* Bloquear opciones y revelar la correcta */
-    quiz.querySelector('.quiz__check').disabled = true;
-    quiz.querySelectorAll('.quiz__option').forEach(function (o) {
-      o.disabled = true;
-      if (o.dataset.correct === 'true') o.classList.add('is-correct-reveal');
-    });
-  }
-
-  function resetQuiz(quizId) {
-    var quiz     = document.getElementById(quizId);
-    if (!quiz) return;
-    var feedback = document.getElementById(quizId + '-feedback');
-
-    quiz.querySelectorAll('.quiz__option').forEach(function (o) {
-      o.disabled = false;
-      o.classList.remove('is-selected', 'is-correct-reveal');
-    });
-    quiz.querySelector('.quiz__check').disabled = false;
-    feedback.querySelector('.quiz__msg-correct').hidden   = true;
-    feedback.querySelector('.quiz__msg-incorrect').hidden = true;
-    feedback.hidden = true;
-  }
-
-  window.checkQuiz = checkQuiz;
-  window.resetQuiz = resetQuiz;
-
-  /* ── Active nav link highlighting ───────────────────────── */
-  const currentPath = window.location.pathname.split('/').pop();
-
-  document.querySelectorAll('.nav__link').forEach(function (link) {
-    const href = link.getAttribute('href');
-    if (!href) return;
-    const linkFile = href.split('/').pop();
-    if (linkFile === currentPath || (currentPath === '' && linkFile === 'index.html')) {
-      link.classList.add('is-active');
-      link.setAttribute('aria-current', 'page');
-    }
-  });
 })();

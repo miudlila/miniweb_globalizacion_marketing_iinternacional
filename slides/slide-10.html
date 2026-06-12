@@ -1,10 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ISIN y CFI</title>
-  <meta name="description" content="ISIN y CFI: el DNI financiero de cada valor. Caso Banco Santander (ES0113900J37). Identificación universal de instrumentos financieros en los mercados globales.">
+  <title>FMI | Globalización y Marketing Internacional</title>
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -14,18 +13,14 @@
   <header class="site-header" role="banner">
     <div class="container site-header__inner">
       <a href="../index.html" class="site-header__logo" aria-label="Volver al índice del curso">
-        <img src="../images/logo.jpg" alt="COMT068PO – Mercados Financieros Internacionales" class="site-header__logo-img">
       </a>
       <button class="nav__toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
         <span></span><span></span><span></span>
       </button>
       <nav id="main-nav" class="nav__menu" aria-label="Navegación principal">
         <a href="../index.html" class="nav__link">Índice</a>
-        <a href="slide-01.html" class="nav__link">Introducción</a>
-        <a href="slide-09.html" class="nav__link">← Anterior</a>
-        <a href="slide-11.html" class="nav__link">Siguiente →</a>
-        <a href="slide-16.html" class="nav__link">Conclusión</a>
-        <a href="slide-17.html" class="nav__link">Cierre</a>
+        <a href="slide-09.html" class="nav__link"> Anterior</a>
+        <a href="slide-11.html" class="nav__link">Siguiente </a>
       </nav>
     </div>
   </header>
@@ -33,12 +28,15 @@
   <main>
     <section class="slide-hero" aria-labelledby="slide-title">
       <div class="container slide-hero__inner">
-        <div class="slide-progress-badge" aria-label="Diapositiva 10 de 17">09
-        </div>
-        <p class="slide-hero__eyebrow">Los mercados y las bolsas internacionales.</p>
-        <h1 id="slide-title" class="slide-hero__title">ISIN y CFI</h1>
+        <div class="slide-progress-badge">11</div>
+        <p class="slide-hero__eyebrow">Estabilidad Monetaria Global</p>
+        <h1 id="slide-title" class="slide-hero__title">Fondo Monetario Internacional (FMI)</h1>
+        <ul class="slide-keypoints" aria-label="Puntos clave">
+          <li class="slide-keypoints__item"><a href="#que-heading">¿Qué es el FMI?</a></li>
+          <li class="slide-keypoints__item"><a href="#funciones-heading">Funciones y préstamos</a></li>
+        </ul>
         <div class="progress-bar-wrapper" role="presentation">
-          <div class="progress-bar-fill" style="width: calc(10/17 * 100%)" aria-hidden="true"></div>
+          <div class="progress-bar-fill" style="width: calc(11/19 * 100%)" aria-hidden="true"></div>
         </div>
       </div>
     </section>
@@ -47,116 +45,78 @@
 
       <section class="content-block content-block--objetivo" aria-labelledby="objetivo-heading">
         <h2 id="objetivo-heading" class="content-block__title">Objetivo</h2>
-        <p>Comprenderás por qué los mercados financieros globales necesitan un sistema universal de identificación de valores, y que entienda con claridad —sin tecnicismos innecesarios— qué son el ISIN y el CFI y qué papel juegan en la operativa cotidiana.</p>
+        <p>Verás cómo el FMI actúa como "banco de emergencia" del mundo y por qué importa para la estabilidad económica global.</p>
       </section>
 
-      <section class="content-block content-block--guion" aria-labelledby="guion-heading">
-        <h2 id="guion-heading" class="content-block__title">Explicación</h2>
-        <p>Pensemos en algo muy concreto. Una gestora de fondos en Tokio decide comprar acciones de Banco Santander. Su sistema informático tiene que procesar esa orden en fracciones de segundo, enrutarla al mercado correcto, liquidar la operación y custodiar los títulos. Todo eso ocurre de forma automática, sin que ningún ser humano tenga que decirle al sistema "esto es Santander, que es un banco español, que cotiza en Madrid".</p>
-        <p>¿Cómo lo sabe el sistema? Por un código. Un código único, universal e inequívoco. Ese código se llama <strong>ISIN</strong>.</p>
-        <p>El ISIN —International Securities Identification Number— es literalmente el <strong>DNI de cada valor financiero en el mundo</strong>. Doce caracteres alfanuméricos que identifican de forma irrepetible cualquier acción, bono, ETF o derivado, en cualquier mercado, en cualquier idioma, en cualquier país.</p>
+      <section class="content-block content-block--guion" aria-labelledby="que-heading">
+        <h2 id="que-heading" class="content-block__title">¿Qué es el FMI?</h2>
+        <p>El <strong>FMI es la institución internacional que estabiliza economías nacionales.</strong> Creado en 1944 (post-IIGM), tiene 190 países miembros.</p>
+
+        <p style="margin-top: 1rem; padding: 1rem; background: rgba(29,82,136,0.08); border-radius: 0.75rem; border-left: 3px solid #1d5288;">
+          <strong>Analogía:</strong> Si un país es como una empresa, el FMI es el "banco de confianza" que le presta dinero en tiempos de crisis. Ejemplo: Grecia 2010, Argentina 2018.
+        </p>
       </section>
 
-      <section class="content-block content-block--contexto" aria-labelledby="isin-desglose">
-        <h2 id="isin-desglose" class="content-block__title">Desglose del ISIN de Banco Santander</h2>
-        <p>La acción de <strong>Banco Santander</strong> tiene el ISIN: <code class="isin-code">ES0113900J37</code></p>
-        <div class="isin-breakdown" aria-label="Desglose del código ISIN">
-          <div class="isin-breakdown__item">
-            <span class="isin-breakdown__code">ES</span>
-            <span class="isin-breakdown__desc">País de origen (España). Es el código ISO del país emisor —el mismo que aparece en las matrículas de los coches y en los pasaportes europeos. Indica que este valor fue emitido en España y que la CNMV es la autoridad que lo registra.</span>
-          </div>
-          <div class="isin-breakdown__item">
-            <span class="isin-breakdown__code">0113900J3</span>
-            <span class="isin-breakdown__desc">Código específico del valor en el sistema nacional español. El identificador técnico que lo distingue de cualquier otro valor emitido en España.</span>
-          </div>
-          <div class="isin-breakdown__item">
-            <span class="isin-breakdown__code">7</span>
-            <span class="isin-breakdown__desc">Dígito de control. Un mecanismo matemático que verifica que el código no tiene errores. Si alguien teclea mal un número, el sistema lo detecta automáticamente —como el dígito de control del DNI español.</span>
-          </div>
-        </div>
-
-        <p style="margin-top: var(--space-md)">Una acción ordinaria de Banco Santander tiene el CFI <code class="isin-code">ESVUFR</code>:</p>
-        <div class="isin-breakdown" aria-label="Desglose del código CFI">
-          <div class="isin-breakdown__item">
-            <span class="isin-breakdown__code">E</span>
-            <span class="isin-breakdown__desc"><strong>Equity</strong> (acción) — renta variable.</span>
-          </div>
-          <div class="isin-breakdown__item">
-            <span class="isin-breakdown__code">S</span>
-            <span class="isin-breakdown__desc"><strong>common/ordinary Share</strong> — acción ordinaria, no preferente.</span>
-          </div>
-          <div class="isin-breakdown__item">
-            <span class="isin-breakdown__code">V</span>
-            <span class="isin-breakdown__desc"><strong>Voting</strong> — con derecho a voto en las juntas de accionistas.</span>
-          </div>
-          <div class="isin-breakdown__item">
-            <span class="isin-breakdown__code">UFR</span>
-            <span class="isin-breakdown__desc">Detalles adicionales sobre restricciones de transferencia y otros atributos técnicos que los sistemas de liquidación necesitan para procesarla correctamente.</span>
-          </div>
-        </div>
-        <p>Con este código, un inversor en Japón, Alemania o México sabrá exactamente que se trata de la acción de Banco Santander, sin confundirlo con otro valor parecido.</p>
-      </section>
-
-      <section class="content-block content-block--analogia" aria-labelledby="analogia-heading">
-        <h2 id="analogia-heading" class="content-block__title">Analogía</h2>
-        <p>Piensen en un <strong>paquete que se envía internacionalmente</strong>. Cuando llega a la aduana de otro país, el agente escanea el código de seguimiento: sabe de inmediato qué hay dentro, de dónde viene y adónde va. Pero además del código de seguimiento —que identifica ese paquete concreto— hay un código de categoría arancelaria que le dice al sistema si es electrónica, textil o alimento, para aplicar las normas correctas.</p>
+      <section class="content-block content-block--contexto" aria-labelledby="funciones-heading">
+        <h2 id="funciones-heading" class="content-block__title">¿Qué Hace?</h2>
         <ul>
-          <li>El <strong>ISIN es el código de seguimiento</strong>: identifica ese valor concreto y único entre todos los del mundo.</li>
-          <li>El <strong>CFI es el código de categoría</strong>: le dice al sistema qué tipo de instrumento es y cómo debe procesarlo.</li>
+          <li><strong>Presta dinero:</strong> Si Argentina no puede pagar su deuda, el FMI presta. Interés bajo, pero condiciones duras.</li>
+          <li><strong>Supervisa:</strong> Monitoriza tipos de cambio, inflación, endeudamiento. Alerta temprana de crisis.</li>
+          <li><strong>Asesora:</strong> Dice a gobiernos: "Sube impuestos", "Reduce gasto público", "Privatiza empresa estatal".</li>
+          <li><strong>Estadísticas:</strong> Publica datos económicos globales que usa todo mundo.</li>
         </ul>
-        <p>Sin ambos, el sistema no sabe ni qué tiene entre manos ni qué hacer con ello. Con ambos, puede procesar millones de operaciones al día de forma completamente automatizada.</p>
       </section>
 
-      <section class="content-block content-block--complemento" aria-labelledby="complemento-heading">
-        <h2 id="complemento-heading" class="content-block__title">Complemento actualizado</h2>
-        <p><em>(Datos recientes — fuentes: ISO, CNMV, ISIN Organization — 2021/2025)</em></p>
-        <p>El estándar técnico que define el ISIN —la norma <strong>ISO 6166</strong>— fue revisado en <strong>2021</strong>, en su actualización más reciente. Desde su revisión anterior en 2013, el ámbito de aplicación se amplió para incluir muchos más tipos de instrumentos financieros, incluyendo derivados y otros productos que han proliferado en los mercados globales.</p>
-        <p>Un dato técnico relevante: los códigos ISIN se dan de baja y de alta igual que ocurre con los NIF o DNI, y <strong>no se reutilizan</strong>. Si fuera necesario reutilizar un código previamente dado de baja, habría que esperar un mínimo de 10 años. En España, la CNMV es la Agencia Nacional de Numeración encargada de asignar estos códigos a los valores emitidos en territorio español.</p>
-        <p>Y un matiz importante: <strong>el ISIN es solo un identificador, no una garantía de que el valor sea seguro</strong>. Un código ISIN asignado a un instrumento no implica que ese instrumento haya superado ningún control de calidad ni que esté supervisado activamente. Un producto complejo o incluso especulativo puede tener ISIN sin estar regulado de la misma forma que una acción ordinaria de una empresa cotizada.</p>
-        <p><small>⚠ El ejemplo del ISIN de Santander (ES0113900J37), el CFI (ESVUFR) y los datos técnicos sobre ISO 6166 y la gestión de códigos son información actualizada de fuentes externas.</small></p>
+      <section class="content-block content-block--complemento" aria-labelledby="critica-heading">
+        <h2 id="critica-heading" class="content-block__title">Controversia: ¿Ayuda o Daño?</h2>
+        <p><strong>El FMI es controvertido.</strong> Sus "ajustes estructurales" (cortes de gasto) funcionan a veces pero destruyen vidas:</p>
+        <ul>
+          <li><strong>Evita bancarrota nacional.</strong> Argentina 2001 fue caos porque NO siguió consejos del FMI.</li>
+          <li><strong>Aumenta desempleo.</strong> "Reduce función pública" = despidos masivos.</li>
+          <li><strong>Critica de Dependencia.</strong> Países pobres quedan condicionados al FMI.</li>
+        </ul>
+
+        <p style="margin-top: 1rem; padding: 1rem; background: rgba(138, 74, 26, 0.08); border-radius: 0.75rem; border-left: 3px solid #8a4a1a;">
+          <strong>Realidad:</strong> El FMI es necesario pero imperfecto. Mejor tener FMI que no tener nada cuando un país cae.
+        </p>
       </section>
 
-      <section class="content-block content-block--preguntas" aria-labelledby="preguntas-heading">
-        <h2 id="preguntas-heading" class="content-block__title">Preguntas difíciles y respuestas</h2>
-        <div class="qa-item">
-          <p class="qa-item__question">«Si el ISIN identifica un valor de forma única, ¿por qué siguen existiendo fraudes con instrumentos financieros que tienen ISIN asignado?»</p>
-          <p class="qa-item__answer">Porque tener un ISIN no significa estar regulado ni supervisado. El ISIN es un sistema de identificación, no de validación. Un producto financiero complejo, un bono estructurado de alto riesgo o incluso un instrumento que opera en zonas grises de la regulación pueden tener ISIN asignado. De ahí la importancia de verificar siempre, a través del registro de la CNMV, si una entidad está autorizada para vender el producto que ofrece.</p>
-        </div>
-        <div class="qa-item">
-          <p class="qa-item__question">«¿Los criptoactivos tienen ISIN? ¿Cómo se identifican?»</p>
-          <p class="qa-item__answer">Hasta hace poco, los criptoactivos tradicionales como Bitcoin o Ethereum no seguían el estándar ISIN. Sin embargo, con la proliferación de <em>tokens de valores</em> —instrumentos financieros tradicionales emitidos en blockchain— el sector está convergiendo hacia los estándares convencionales. La revisión de la norma ISO 6166 en 2021 amplió precisamente el alcance del ISIN para cubrir nuevos tipos de instrumentos digitales. La regulación europea de criptoactivos —conocida como <strong>MiCA</strong>, en vigor desde 2024— está impulsando la estandarización e identificación de este tipo de activos.</p>
-        </div>
-      </section>
-
-      <!-- Autoevaluación -->
-      <section class="content-block content-block--quiz" aria-labelledby="quiz-sl10-heading">
-        <h2 id="quiz-sl10-heading" class="content-block__title">Autoevaluación</h2>
-        <div class="quiz" id="quiz-sl10" data-quiz>
-          <p class="quiz__question">¿Para qué sirve el código ISIN de un valor financiero?</p>
-          <div class="quiz__options" role="group" aria-labelledby="quiz-sl10-heading">
-            <button class="quiz__option" data-correct="false">Indica el precio de cotización actualizado de una acción en tiempo real</button>
-            <button class="quiz__option" data-correct="false">Refleja la calificación crediticia que las agencias otorgan a los bonos de una empresa</button>
-            <button class="quiz__option" data-correct="true">Identifica de forma única un valor financiero en cualquier bolsa del mundo mediante un código de 12 caracteres</button>
-            <button class="quiz__option" data-correct="false">Determina cuántos dividendos puede repartir una empresa entre sus accionistas</button>
+      <section class="content-block content-block--quiz" aria-labelledby="quiz-heading">
+        <h2 id="quiz-heading" class="content-block__title">Autoevaluación</h2>
+        <div class="quiz" id="quiz-slide10" data-quiz>
+          <p class="quiz__question">¿Cuál es la función PRINCIPAL del FMI?</p>
+          <div class="quiz__options" role="group" aria-labelledby="quiz-heading">
+            <button class="quiz__option" data-correct="false">Financiar proyectos de infraestructura en países pobres</button>
+            <button class="quiz__option" data-correct="true">Estabilizar economías nacionales en crisis con préstamos</button>
+            <button class="quiz__option" data-correct="false">Regular el comercio internacional</button>
+            <button class="quiz__option" data-correct="false">Fijar los tipos de interés globales</button>
           </div>
-          <button class="quiz__check" onclick="checkQuiz('quiz-sl10')">Comprobar →</button>
-          <div id="quiz-sl10-feedback" class="quiz__feedback" hidden>
+          <button class="quiz__check" onclick="checkQuiz('quiz-slide10')">Comprobar </button>
+          <div id="quiz-slide10-feedback" class="quiz__feedback" hidden>
             <div class="quiz__msg-correct" hidden>
-              <strong class="quiz__feedback-label">✓ Exacto.</strong>
-              <p>El ISIN es el DNI del valor financiero: un código de 12 caracteres (2 letras de país + 9 alfanuméricos + 1 dígito de control) que identifica de forma única cualquier acción, bono o fondo en cualquier bolsa del mundo. Por ejemplo, <strong>ES0113900J37</strong> es siempre el Banco Santander, en cualquier mercado.</p>
+              <strong class="quiz__feedback-label">Correcto: Estabilizar economías nacionales en crisis</strong>
+              <p><strong>El FMI es el "prestamista de último recurso".</strong> Cuando un país enfrenta crisis de liquidez (no puede pagar deudas), el FMI presta dinero con condiciones: ajustes económicos, control de inflación, etc.</p>
+              <p style="margin-top: 0.5rem;"><strong>Ejemplo real:</strong> Grecia 2010, Argentina 2018. Ambos pidieron rescate al FMI.</p>
             </div>
             <div class="quiz__msg-incorrect" hidden>
-              <strong class="quiz__feedback-label">✗ Te has equivocado.</strong>
-              <p>La respuesta correcta es: <strong>Identifica de forma única un valor financiero en cualquier bolsa del mundo mediante un código de 12 caracteres</strong>. El ISIN no dice nada sobre precios, dividendos ni calificaciones crediticias: es simplemente el identificador universal del valor.</p>
+              <strong class="quiz__feedback-label">Incorrecto.</strong>
+              <p><strong>La respuesta correcta es:</strong> Estabilizar economías nacionales en crisis con préstamos</p>
+              <p style="margin-top: 0.5rem;"><strong>¿Por qué están mal las otras?</strong></p>
+              <ul style="margin-top: 0.25rem; padding-left: 1.2rem; color: inherit;">
+                <li><strong>Infraestructura:</strong> Eso lo hace el BANCO MUNDIAL (carreteras, escuelas). FMI es para crisis monetarias.</li>
+                <li><strong>Regular comercio:</strong> Eso lo hace la OMC. FMI se enfoca en dinero y sistemas de pago.</li>
+                <li><strong>Fijar tipos de interés:</strong> Eso lo hacen los Bancos Centrales nacionales. FMI solo asesora.</li>
+              </ul>
             </div>
-            <button class="quiz__reset" onclick="resetQuiz('quiz-sl10')">Intentar de nuevo</button>
+            <button class="quiz__reset" onclick="resetQuiz('quiz-slide10')">Intentar de nuevo</button>
           </div>
         </div>
       </section>
 
-      <section class="content-block content-block--transicion" aria-labelledby="transicion-heading">
-        <h2 id="transicion-heading" class="content-block__title">Transición</h2>
-        <p>Hemos visto cómo se identifica y clasifica cada instrumento financiero en el sistema global. Ahora toca ampliar el mapa: más allá de España, ¿qué bolsas europeas mueven el capital del continente? La siguiente parada es <strong>el ecosistema bursátil europeo y <button class="term-link" onclick="openModal('modal-euronext')" aria-haspopup="dialog">Euronext</button></strong>.</p>
+      <section class="content-block content-block--transicion" aria-labelledby="siguiente-heading">
+        <h2 id="siguiente-heading" class="content-block__title">Siguiente: Banco Mundial</h2>
+        <p><strong>Si el FMI es el "banco central" del mundo, el Banco Mundial es el "banco de desarrollo".</strong></p>
+        <p style="margin-top: 1rem; color: #64748b;">Se enfoca en financiar proyectos a largo plazo: carreteras, escuelas, electricidad en países pobres.</p>
       </section>
 
     </div>
@@ -164,61 +124,21 @@
 
   <nav class="slide-nav" aria-label="Navegación entre diapositivas">
     <div class="container slide-nav__inner">
-      <a href="slide-09.html" class="slide-nav__btn slide-nav__btn--prev" aria-label="Diapositiva anterior: La CNMV">← Anterior</a>
+      <a href="slide-09.html" class="slide-nav__btn slide-nav__btn--prev" aria-label="Diapositiva anterior"> Anterior</a>
       <a href="../index.html" class="slide-nav__btn slide-nav__btn--index">Índice</a>
-      <a href="slide-11.html" class="slide-nav__btn slide-nav__btn--next" aria-label="Siguiente diapositiva: Bolsas Europeas y Euronext">Siguiente →</a>
+      <a href="slide-11.html" class="slide-nav__btn slide-nav__btn--next" aria-label="Siguiente diapositiva">Siguiente </a>
     </div>
   </nav>
 
   <footer class="site-footer" role="contentinfo">
     <div class="container site-footer__inner">
-      <p class="site-footer__course">COMT068PO – Mercados Financieros Internacionales</p>
-      <p class="site-footer__course">LOS MERCADOS Y LAS BOLSAS INTERNACIONALES</p>
-      <p class="site-footer__copy">&copy; 2026 Dise&ntilde;o y desarrollo WEB Lyudmyla Chub (Tutora del curso). Todos los derechos reservados. &middot; <a href="../politica-cookies.html" class="site-footer__cookie-link">Pol&iacute;tica de cookies</a></p>
+      <p class="site-footer__course">COMT018PO – Globalización y Marketing Internacional · Teleformación</p>
+      <p class="site-footer__copy">© 2026 Miniweb Educativa</p>
     </div>
   </footer>
 
-  <button class="btn-top" aria-label="Volver al inicio de la página">↑</button>
-  <!-- Modal: Euronext -->
-  <div id="modal-euronext" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-euronext-titulo">
-    <div class="modal">
-      <button class="modal__close" onclick="closeModal('modal-euronext')" aria-label="Cerrar">&times;</button>
-      <h2 id="modal-euronext-titulo" class="modal__title">Euronext</h2>
-      <div class="modal__body">
-        <p class="modal__section-label">¿Qué es?</p>
-        <p>Es la empresa que gestiona varias bolsas de valores europeas bajo un mismo paraguas. Su nombre une las palabras <em>Euro</em> y <em>Next</em> —el siguiente paso para los mercados europeos—. Hoy opera las bolsas de <strong>París, Ámsterdam, Bruselas, Lisboa, Dublín, Oslo y Milán</strong>, entre otras. Es el mayor operador de bolsas de la Unión Europea.</p>
-        <p>Nació en el año <strong>2000</strong>, cuando las bolsas de París, Ámsterdam y Bruselas decidieron unirse para competir mejor con Londres y Wall Street. Con el tiempo fue absorbiendo más bolsas del continente.</p>
+  <button class="btn-top" aria-label="Volver al inicio de la página"></button>
 
-        <p class="modal__section-label">¿Qué ventaja tiene que varias bolsas se unan?</p>
-        <p>Cuando varias bolsas comparten la misma plataforma tecnológica y las mismas normas de funcionamiento, los inversores pueden comprar y vender acciones de diferentes países europeos de forma mucho más sencilla, rápida y barata. Es como si antes tuvieras que ir a una tienda diferente en cada ciudad y ahora todas esas tiendas fueran el mismo centro comercial.</p>
-
-        <p class="modal__section-label">Analogía</p>
-        <p>Imagina que en España cada provincia tuviera su propia red de autobuses, con billetes distintos, horarios distintos y ninguna conexión entre ellas. Viajar de una provincia a otra sería un caos. Euronext es como crear una única red de transporte integrada para toda Europa: los viajeros (inversores) se mueven con el mismo billete, por las mismas vías, con las mismas reglas. Las ciudades (bolsas) siguen siendo ellas mismas, pero están conectadas.</p>
-
-        <p class="modal__section-label">¿Y España?</p>
-        <p>Las bolsas españolas <strong>no forman parte de Euronext</strong>: pertenecen a SIX Group desde 2020. Pero las empresas españolas que cotizan en el IBEX-35 sí son perfectamente accesibles para cualquier inversor europeo, porque los sistemas de identificación como el ISIN y el CFI garantizan que todo habla el mismo idioma técnico.</p>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Cookie consent -->
-  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Aviso de cookies">
-    <div class="cookie-banner__inner">
-      <div class="cookie-banner__text">
-        <strong>Este sitio utiliza cookies</strong>
-        <p>Usamos almacenamiento local para guardar tus preferencias. Los vídeos de YouTube pueden establecer sus propias cookies. <a href="../politica-cookies.html" class="cookie-banner__link">Más información</a></p>
-      </div>
-      <div class="cookie-banner__actions">
-        <button class="cookie-banner__btn cookie-banner__btn--reject" onclick="cookieConsent('reject')">Solo esenciales</button>
-        <button class="cookie-banner__btn cookie-banner__btn--accept" onclick="cookieConsent('accept')">Aceptar todas</button>
-      </div>
-    </div>
-  </div>
   <script src="../js/main.js"></script>
 </body>
 </html>
-
-
-
-

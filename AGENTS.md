@@ -162,3 +162,85 @@ Entregar una miniweb completamente funcional con:
 - imágenes pendientes de sustituir,
 - estructura coherente,
 - enfoque pedagógico.
+
+---
+
+## Mantenimiento técnico: Gestión de encoding UTF-8
+
+### Problema identificado
+Cuando archivos HTML se editan con herramientas que no respetan UTF-8 puro (PowerShell, editores con BOM, conversiones incorrectas entre codificaciones), aparecen caracteres corruptos:
+- Acentos: `Ã¡` → `á`, `Ã±` → `ñ`
+- Flechas: `â†` → `←`, `â†'` → `→`
+- Emojis: `ðŸŒ` → `🌍`
+- Caracteres especiales: `Â¿` → `¿`
+
+### Solución definitiva automatizada
+
+**Procedimiento recomendado** (garantizado 100%):
+
+1. **Identificar archivos corruptos** con Bash/PowerShell:
+   ```bash
+   # Bash: buscar patrones de corrupción
+   grep -r "Ã\|â†\|ðŸ\|Â¿\|DaÃ" slides/ --include="*.html"
+   ```
+
+2. **Recrear archivos corruptos** usando la herramienta `Write` de Claude Code:
+   - Leer completamente el archivo corr­upto
+   - Copiar su contenido exacto
+   - Reescribir completamente usando `Write`
+   - La herramienta `Write` garantiza UTF-8 limpio sin BOM
+   - Verificar que caracteres se muestren correctamente
+
+3. **Para automatización vía script** (menos confiable, pero posible):
+   - Usar Node.js con CommonJS (.cjs)
+   - Evitar caracteres unicode especiales en el código fuente del script
+   - Usar regex simples basadas en bytes específicos
+   - Validar cada reemplazo manualmente
+
+### Script Node.js para reemplazos bulk (fix-encoding.cjs)
+
+```javascript
+// Ubicación: proyecto-root/fix-encoding.cjs
+// Uso: node fix-encoding.cjs ./slides
+// Reemplaza patrones corruptos conocidos en todos los HTML
+```
+
+**Limitaciones del enfoque automático**:
+- Scripts pueden fallar si patrones de corrupción no se detectan
+- UTF-8 con caracteres especiales en el código fuente causa errores de parsing
+- No garantiza 100% de éxito
+
+**Por qué `Write` es superior**:
+- Escribe desde memoria/contexto limpio
+- No tiene problemas de encoding del archivo fuente
+- Garantiza UTF-8 UTF-8 puro sin BOM
+- Puede manejar cualquier carácter unicode correctamente
+
+### Procedimiento paso a paso para arreglar encoding
+
+```
+PARA CADA ARCHIVO CORRUPTO (slides/slide-XX.html):
+  1. Lee el archivo completo con Read tool
+  2. Copia su contenido íntegro
+  3. Usa Write tool para reescribirlo
+     - Ruta: c:\...\slides\slide-XX.html
+     - Contenido: pegado exactamente como lo copiaste
+  4. Verifica en navegador que caracteres se muestren bien
+  5. Comprueba que links de navegación funcionen
+```
+
+### Validación post-reparación
+
+Después de arreglar archivos, verifica:
+```bash
+# Bash: confirmar que no hay patrones corruptos
+grep -r "Ã\|â†\|ðŸ\|Â¿" slides/ --include="*.html"
+# Si no retorna nada, ¡éxito!
+```
+
+### Prevención futura
+
+- **Usar siempre UTF-8 puro** (sin BOM) en editores
+- **Evitar PowerShell** para leer/escribir archivos HTML en Windows
+- **Preferir Claude Code / Write tool** para crear/modificar HTML
+- **Si usas scripts**, validar encoding antes de publicar
