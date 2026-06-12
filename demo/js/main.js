@@ -142,4 +142,38 @@
       option.setAttribute('data-checked', 'true');
     });
   });
+
+  window.openModal = function (modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
+  };
+
+  window.closeModal = function (modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+  };
+
+  document.querySelectorAll('.modal-backdrop').forEach(function (backdrop) {
+    backdrop.addEventListener('click', function (e) {
+      if (e.target === backdrop) {
+        const modalId = backdrop.id;
+        closeModal(modalId);
+      }
+    });
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      const openModals = document.querySelectorAll('.modal-backdrop.is-open');
+      openModals.forEach(function (modal) {
+        closeModal(modal.id);
+      });
+    }
+  });
 })();
